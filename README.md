@@ -1,1 +1,1 @@
-# -FHIR-NEWS2
+# FHIR-NEWS2
