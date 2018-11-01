@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="5f2baac4-ee3e-425d-999f-f370a63f0375"/>
+	<meta>
+		<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1"/>
+	</meta>
+	<identifier>
+		<system value="https://tools.ietf.org/html/rfc4122"/>
+		<value value="c28f2741-75c2-4fc4-a56f-d61188199903"/>
+	</identifier>
+	<type value="message"/>
+	<entry>
+		<fullUrl value="urn:uuid:9a7865bc-8443-44c9-9b8d-aa5becc7cde4"/>
+		<resource>
+			<MessageHeader>
+				<id value="9a7865bc-8443-44c9-9b8d-aa5becc7cde4"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-MessageHeader-2"/>
+				</meta>
+				<extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-MessageHandling-2">
+					<!--The value of this handling specification is dependant on the response pattern.-->
+					<extension url="BusAckRequested">
+						<valueBoolean value="false"/>
+					</extension>
+					<extension url="InfAckRequested">
+						<valueBoolean value="true"/>
+					</extension>
+					<extension url="RecipientType">
+						<valueCoding>
+							<system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-RecipientType-1"/>
+							<code value="FA"/>
+							<display value="For Action"/>
+						</valueCoding>
+					</extension>
+					<extension url="MessageDefinition">
+						<valueReference>
+							<!--################################################################################################-->
+							<reference value="https://fhir.nhs.uk/STU3/MessageDefinition/ITK-EDIS-MessageDefinition-1"/>
+							<!--################################################################################################-->
+						</valueReference>
+					</extension>
+					<extension url="SenderReference">
+						<valueString value="None"/>
+					</extension>
+					<extension url="LocalExtension">
+						<valueString value="None"/>
+					</extension>
+				</extension>
+				<event>
+					<system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2"/>
+					<code value="#######"/>
+					<display value="########"/>
+				</event>
+				<receiver>
+					<reference value="urn:uuid:###############"/>
+				</receiver>
+				<sender>
+					<reference value="urn:uuid:######################"/>
+				</sender>
+				<timestamp value="2017-01-23T10:10:16+00:00"/>
+				<source>
+					<endpoint value="NOROT003"/>
+				</source>
+				<focus>
+					<reference value="urn:uuid:3740d3a2-e3ae-4454-9d77-0017afda0f05"/>
+				</focus>
+			</MessageHeader>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:3740d3a2-e3ae-4454-9d77-0017afda0f05"/>
+		<resource>
+			<Observation xmlns="http://hl7.org/fhir">
+				<id value="3740d3a2-e3ae-4454-9d77-0017afda0f05"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-NEWS2-Observation-1"/>
+				</meta>
+				<status value="final"/>
+				<category>
+					<coding>
+						<system value="http://hl7.org/fhir/observation-category"/>
+						<code value="survey"/>
+						<display value="Survey"/>
+					</coding>
+				</category>
+				<code>
+					<coding>
+						<system value="http://snomed.info/sct"/>
+						<code value="1104051000000101"/>
+						<display value="Royal College of Physicians National Early Warning Score 2 total score"/>
+					</coding>
+				</code>
+				<subject>
+					<reference value="urn:uuid:1e2b5223-1cd8-43ff-8a67-55dec3edb9b0"/>
+				</subject>
+				<effectiveDateTime value="2018-10-04T14:17:59+01:00"/>
+				<performer>
+					<reference value="urn:uuid:33cd4a2a-417f-4449-8293-31b15ea37470"/>
+				</performer>
+				<performer>
+					<reference value="urn:uuid:1226082b-315e-40be-83cf-5d21a964219e"/>
+				</performer>
+				<valueQuantity>
+					<value value="12"/>
+				</valueQuantity>
+			</Observation>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:33cd4a2a-417f-4449-8293-31b15ea37470"/>
+		<resource>
+			<Practitioner>
+				<id value="33cd4a2a-417f-4449-8293-31b15ea37470"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.hl7.org.uk/Id/gmc-number"/>
+					<value value="6122477"/>
+				</identifier>
+				<name>
+					<family value="Rastall"/>
+					<given value="Paul"/>
+					<prefix value="Dr"/>
+				</name>
+				<telecom>
+					<system value="phone"/>
+					<value value="01136323200"/>
+					<use value="work"/>
+				</telecom>
+				<gender value="male"/>
+			</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:1226082b-315e-40be-83cf-5d21a964219e"/>
+		<resource>
+			<Organization>
+				<id value="1226082b-315e-40be-83cf-5d21a964219e"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"/>
+				</meta>
+				<identifier>
+					<system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+					<value value="ABC123"/>
+				</identifier>
+				<name value="ANYTOWN ROYAL INFIRMARY"/>
+				<telecom>
+					<system value="phone"/>
+					<value value="01134875516"/>
+				</telecom>
+				<address>
+					<line value="1 High Street"/>
+					<city value="ANYTOWN"/>
+					<postalCode value="LS1 9AM"/>
+				</address>
+			</Organization>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:1e2b5223-1cd8-43ff-8a67-55dec3edb9b0"/>
+		<resource>
+			<Patient>
+				<id value="1e2b5223-1cd8-43ff-8a67-55dec3edb9b0"/>
+				<meta>
+					<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"/>
+				</meta>
+				<identifier>
+					<extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+						<valueCodeableConcept>
+							<coding>
+								<system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1"/>
+								<code value="01"/>
+								<display value="Number present and verified"/>
+							</coding>
+						</valueCodeableConcept>
+					</extension>
+					<system value="https://fhir.nhs.uk/Id/nhs-number"/>
+					<value value="2378954317"/>
+				</identifier>
+				<name>
+					<use value="official"/>
+					<text value="Mr William Smith"/>
+					<family value="SMITH"/>
+					<given value="William"/>
+					<prefix value="Mr"/>
+				</name>
+				<gender value="male"/>
+				<birthDate value="1956-02-04"/>
+				<address>
+					<use value="home"/>
+					<line value="14 Sunny Mews"/>
+					<city value="ANYTOWN"/>
+					<district value="WEST YORKSHIRE"/>
+					<postalCode value="LS17 4NK"/>
+				</address>
+				<maritalStatus>
+					<coding>
+						<system value="http://hl7.org/fhir/v3/MaritalStatus"/>
+						<code value="M"/>
+						<display value="Married"/>
+					</coding>
+				</maritalStatus>
+			</Patient>
+		</resource>
+	</entry>
+</Bundle>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="862e75bf-ce19-4fde-a9c0-333a69690ed3"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-BodyTemperature-Observation-1"/>
+	</meta>
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://hl7.org/fhir/observation-category"/>
+			<code value="vital-signs"/>
+			<display value="Vital Signs"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="8310-5"/>
+			<display value="Body temperature"/>
+		</coding>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="276885007"/>
+			<display value="Core body temperature"/>
+		</coding>	
+	</code>
+	<subject>
+		<reference value="Patient/example"/>
+	</subject>
+	<effectiveDateTime value="2018-10-04T14:17:59+01:00"/>
+	<performer>
+		<reference value="Performer/example"/>
+	</performer>
+	<performer>
+		<reference value="Organization/example"/>
+	</performer>
+	<valueQuantity>
+		<value value="37.5"/>
+		<unit value="Cel"/>
+		<system value="http://unitsofmeasure.org"/>
+	</valueQuantity>
+</Observation>
+

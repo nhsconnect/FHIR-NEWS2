@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="54448e36-4611-4ac4-a792-8e0e157bce72"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Subscore-Observation-1"/>
+	</meta>
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://hl7.org/fhir/observation-category"/>
+			<code value="survey"/>
+			<display value="Survey"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="1104301000000104"/>
+			<display value="Royal College of Physicians National Early Warning Score 2 - respiration rate score"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/example"/>
+	</subject>
+	<effectiveDateTime value="2018-10-04T14:17:59+01:00"/>
+	<performer>
+		<reference value="Performer/example"/>
+	</performer>
+	<performer>
+		<reference value="Organization/example"/>
+	</performer>
+	<valueQuantity>
+		<value value="2"/>
+	</valueQuantity>
+	<related>
+		<reference value="urn:uuid:4afa23b1-2a18-4676-8607-0585ba8c8b3b"/>
+	</related>
+</Observation>

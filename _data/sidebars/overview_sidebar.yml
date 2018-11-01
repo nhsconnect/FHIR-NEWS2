@@ -1,0 +1,62 @@
+entries:
+- title: NEWS2 Implementation Guide
+  product: NEWS2 Implementation Guide<br/>
+  version: 1.0.0-alpha.1
+  levels: one
+  folders:
+
+  - title: Overview
+    output: web
+    folderitems:
+    - title: Introduction
+      url: /index.html
+      output: web, pdf
+      type: homepage
+    - title: Guide Versioning
+      url: /overview_guide_versioning.html
+      output: web
+    - title: Release Notes
+      url: /overview_release_notes.html
+      output: web
+    - title: Glossary
+      url: /overview_glossary.html
+      output: web      
+
+  - title: Messaging Architecture
+    output: web
+    folderitems:
+    - title: Overview
+      url: /messaging_architecture_overview.html
+      output: web
+    - title: Transport
+      url: /messaging_transport_overview.html
+      output: web
+    - title: Message Design
+      url: /messageoverview_overview.html
+      output: web
+    - title: NEWS2 Profiles
+      url: /news2_and_subscore_profiles.html
+      output: web
+    
+  - title: Develop
+    output: web
+    folderitems:
+    - title: Overview
+      url: /develop_overview.html
+      output: web
+    - title: Messaging Over MESH
+      url: /messaging_over_mesh.html
+      output: web    
+    - title: API Call
+      url: /messaging_over_api.html
+      output: web    
+
+  - title: Communications
+    output: web
+    folderitems:    
+    - title: Overview
+      url: /communications_overview.html
+      output: web
+    - title: Frequently Asked Questions (FAQ)
+      url: /communications_faq.html
+      output: web

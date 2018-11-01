@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="3740d3a2-e3ae-4454-9d77-0017afda0f05"/>
+	<meta>
+		<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-NEWS2-Observation-1"/>
+	</meta>
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://hl7.org/fhir/observation-category"/>
+			<code value="survey"/>
+			<display value="Survey"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="1104051000000101"/>
+			<display value="Royal College of Physicians National Early Warning Score 2 total score"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/example"/>
+	</subject>
+	<effectiveDateTime value="2018-10-04T14:17:59+01:00"/>
+	<performer>
+		<reference value="Performer/example"/>
+	</performer>
+	<performer>
+		<reference value="Organization/example"/>
+	</performer>
+	<valueQuantity>
+		<value value="12"/>
+	</valueQuantity>
+</Observation>

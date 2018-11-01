@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="97fc0792-7d1d-4b21-aa5e-1805ec29c77e"/>
+	<meta>
+		<profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-InspiredOxygen-Observation-1"/>
+	</meta>
+	<status value="final"/>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="722742002"/>
+			<display value="Breathing room air"/>
+		</coding>	
+	</code>
+	<subject>
+		<reference value="Patient/example"/>
+	</subject>
+	<effectiveDateTime value="2018-10-04T14:17:59+01:00"/>
+	<performer>
+		<reference value="Performer/example"/>
+	</performer>
+	<performer>
+		<reference value="Organization/example"/>
+	</performer>
+</Observation>

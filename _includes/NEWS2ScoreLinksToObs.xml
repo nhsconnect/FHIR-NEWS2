@@ -1,0 +1,55 @@
+<Observation xmlns="http://hl7.org/fhir">
+	<id value="3740d3a2-e3ae-4454-9d77-0017afda0f05"/>
+	<meta>
+		<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-NEWS2-Observation-1"/>
+	</meta>
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://hl7.org/fhir/observation-category"/>
+			<code value="survey"/>
+			<display value="Survey"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://snomed.info/sct"/>
+			<code value="1104051000000101"/>
+			<display value="Royal College of Physicians National Early Warning Score 2 total score"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/example"/>
+	</subject>
+	<effectiveDateTime value="2018-10-04T14:17:59+01:00"/>
+	<performer>
+		<reference value="Performer/example"/>
+	</performer>
+	<performer>
+		<reference value="Organization/example"/>
+	</performer>
+	<valueQuantity>
+		<value value="12"/>
+	</valueQuantity>
+	<related>
+		<reference value="urn:uuid:4afa23b1-2a18-4676-8607-0585ba8c8b3b"/>
+	</related>
+	<related>
+		<reference value="urn:uuid:66c78b9d-e8f0-4fd1-8422-4c7209bbe086"/>
+	</related>
+	<related>
+		<reference value="urn:uuid:a8afea25-8565-45e8-8b46-ee7e38c0d21e"/>
+	</related>
+	<related>
+		<reference value="urn:uuid:97fc0792-7d1d-4b21-aa5e-1805ec29c77e"/>
+	</related>
+	<related>
+		<reference value="urn:uuid:9011b916-b541-4907-9d7a-2d675eccba60"/>
+	</related>
+	<related>
+		<reference value="urn:uuid:4632f9a6-d0fa-4605-b0cd-ba1099de6568"/>
+	</related>
+	<related>
+		<reference value="urn:uuid:862e75bf-ce19-4fde-a9c0-333a69690ed3"/>
+	</related>
+</Observation>
