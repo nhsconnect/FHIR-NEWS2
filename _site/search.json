@@ -1,0 +1,368 @@
+[
+
+
+
+
+{
+"title": "Assurance Overview",
+"tags": "testingintegrationdeployment",
+"keywords": "testing, assurance",
+"url": "assure_overview.html",
+"summary": "An overview of the technical assurance process and tools."
+},
+
+
+
+{
+"title": "Capability One",
+"tags": "capability",
+"keywords": "capability",
+"url": "capability_one.html",
+"summary": "Details of the functionality available in capability pack one."
+},
+
+
+
+{
+"title": "Capability One First Use Case",
+"tags": "use_casefhir",
+"keywords": "capability, use case",
+"url": "capability_one_first_use_case.html",
+"summary": "First use case."
+},
+
+
+
+{
+"title": "Capability One Known Issues",
+"tags": "",
+"keywords": "capability, known issues, bugs",
+"url": "capability_one_known_issues.html",
+"summary": "Known issues for the capability."
+},
+
+
+
+{
+"title": "Capability One Release Notes",
+"tags": "",
+"keywords": "capability, release notes",
+"url": "capability_one_release_notes.html",
+"summary": "Release notes for the capability."
+},
+
+
+
+{
+"title": "Frequently Asked Questions (FAQ)",
+"tags": "support",
+"keywords": "support, faq, questions",
+"url": "communications_faq.html",
+"summary": "Frequently Asked Questions (FAQ)."
+},
+
+
+
+{
+"title": "Communications Overview",
+"tags": "support",
+"keywords": "support, communications, community",
+"url": "communications_overview.html",
+"summary": "An overview of the communication channels used by the team."
+},
+
+
+
+{
+"title": "Deployment Overview",
+"tags": "testingintegrationdeployment",
+"keywords": "testing, deployment",
+"url": "deploy_overview.html",
+"summary": "An overview of the deployment tools and processes related to achieving go-live."
+},
+
+
+
+{
+"title": "Development Overview",
+"tags": "design",
+"keywords": "design",
+"url": "develop_overview.html",
+"summary": "An overview of the development tools / code examples available to help develop provider and consumder systems."
+},
+
+
+
+
+
+{
+"title": "National Early Warning Score (NEWS)2",
+"tags": "getting_started",
+"keywords": "homepage",
+"url": "index.html",
+"summary": "A brief introduction to getting started."
+},
+
+
+
+{
+"title": "Message Design Overview",
+"tags": "designexplore",
+"keywords": "explore, design, reference",
+"url": "messageoverview_overview.html",
+"summary": "An overview of the NEWS 2 message design."
+},
+
+
+
+{
+"title": "Message Architecture Overview",
+"tags": "designexplore",
+"keywords": "explore, design, reference",
+"url": "messaging_architecture_overview.html",
+"summary": "An overview of the Messaging Architecture."
+},
+
+
+
+{
+"title": "Message Transport Overview",
+"tags": "designexplore",
+"keywords": "explore, design, reference",
+"url": "messaging_transport_overview.html",
+"summary": "An overview of the NEWS 2 messaging transport."
+},
+
+
+
+{
+"title": "News",
+"tags": "",
+"keywords": "news, blog, updates, release notes, announcements",
+"url": "news.html",
+"summary": ""
+},
+
+
+
+{
+"title": "NEWS2 ACPVU Guidance",
+"tags": "designexplore",
+"keywords": "explore, design, reference",
+"url": "news2_acpvu_guidance.html",
+"summary": "Guidance for populating the NEWS2 ACPVU Observation."
+},
+
+
+
+{
+"title": "NEWS2 Profiles",
+"tags": "designexplore",
+"keywords": "explore, design, reference",
+"url": "news2_and_subscore_profiles.html",
+"summary": "NEWS2, Sub-score & Observation Profiles"
+},
+
+
+
+{
+"title": "NEWS2 Blood Pressure Guidance",
+"tags": "designexplore",
+"keywords": "explore, design, reference",
+"url": "news2_bloodpressure_guidance.html",
+"summary": "Guidance for populating the NEWS2 Blood Pressure Observation."
+},
+
+
+
+{
+"title": "NEWS2 Body Temperature Guidance",
+"tags": "designexplore",
+"keywords": "explore, design, reference",
+"url": "news2_bodytemperature_guidance.html",
+"summary": "Guidance for populating the NEWS2 Body Temperature Observation."
+},
+
+
+
+{
+"title": "NEWS2 Inspired Oxygen Guidance",
+"tags": "designexplore",
+"keywords": "explore, design, reference",
+"url": "news2_inspiredoxygen_guidance.html",
+"summary": "Guidance for populating the NEWS2 Inspired Oxygen Observation."
+},
+
+
+
+{
+"title": "NEWS2 Observation Guidance",
+"tags": "designexplore",
+"keywords": "explore, design, reference",
+"url": "news2_observation_guidance.html",
+"summary": "Guidance for populating the NEWS2 Observation."
+},
+
+
+
+{
+"title": "NEWS2 Oxygen Saturation Guidance",
+"tags": "designexplore",
+"keywords": "explore, design, reference",
+"url": "news2_oxygensaturation_guidance.html",
+"summary": "Guidance for populating the NEWS2 Oxygen Saturation Observation."
+},
+
+
+
+{
+"title": "NEWS2 Pulse Rate Guidance",
+"tags": "designexplore",
+"keywords": "explore, design, reference",
+"url": "news2_pulserate_guidance.html",
+"summary": "Guidance for populating the NEWS2 Pulse Rate Observation."
+},
+
+
+
+{
+"title": "NEWS2 Respiratory Rate Guidance",
+"tags": "designexplore",
+"keywords": "explore, design, reference",
+"url": "news2_respiratoryrate_guidance.html",
+"summary": "Guidance for populating the NEWS2 Respiratory Rate Observation."
+},
+
+
+
+{
+"title": "NEWS2 Sub-score Guidance",
+"tags": "designexplore",
+"keywords": "explore, design, reference",
+"url": "news2_subscore_guidance.html",
+"summary": "Guidance for populating the NEWS2 Sub-score."
+},
+
+
+
+{
+"title": "News Archive",
+"tags": "",
+"keywords": "news, blog, updates, release notes, announcements",
+"url": "news_archive.html",
+"summary": ""
+},
+
+
+
+{
+"title": "Glossary",
+"tags": "getting_started",
+"keywords": "abbreviations, definitions, glossaries, terms",
+"url": "overview_glossary.html",
+"summary": "Glossary of terms"
+},
+
+
+
+{
+"title": "Guide Versioning",
+"tags": "development",
+"keywords": "guide, versioning",
+"url": "overview_guide_versioning.html",
+"summary": "An overview of how this implementation guide is versioned."
+},
+
+
+
+{
+"title": "Release Notes",
+"tags": "development",
+"keywords": "release notes",
+"url": "overview_release_notes.html",
+"summary": "Release notes."
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "assetscssstyle.css",
+"summary": ""
+},
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "sitemap.xml",
+"summary": ""
+},
+
+
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "robots.txt",
+"summary": ""
+},
+
+
+
+
+
+{
+"title": "News Item",
+"tags": "newsfhir",
+"keywords": "news",
+"url": "/news_item.html",
+"summary": "News Item!"
+}
+
+
+
+]
