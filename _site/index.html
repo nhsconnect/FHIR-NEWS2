@@ -18,9 +18,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="A brief introduction to getting started with the National Early Warning Score (NEWS)2.">
+<meta name="description" content="A brief introduction to getting started.">
 <meta name="keywords" content="getting_started,  homepage">
-<title>National Early Warning Score (NEWS)2 | Site Title</title>
+<title>National Early Warning Score (NEWS)2 | National Early Warning Score (NEWS2)</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 
@@ -106,17 +106,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="index.html"> <span class="projectTitle"> Site Title and Tag Line</span></a>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html"> <span class="projectTitle"> National Early Warning Score (NEWS2) | FHIR®</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <!-- entries without drop-downs appear here -->
-                
-                
-                
-                <li><a href="news.html">News</a></li>
-                
-                
                 
                 <!-- entries with drop-downs appear here -->
                 <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
@@ -127,22 +121,7 @@
                     <ul class="dropdown-menu">
                         
                         
-                        <li><a href="http://www.google.com/" target="_blank">External Link 1</a></li>
-                        
-                        
-                        
-                        <li><a href="http://www.yahoo.com/" target="_blank">External Link 2</a></li>
-                        
-                        
-                    </ul>
-                </li>
-                
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Capability Packs<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        
-                        
-                        <li><a href="capability_one.html">Capability One</a></li>
+                        <li><a href="http://www.interopen.org/" target="_blank">INTEROPen</a></li>
                         
                         
                     </ul>
@@ -343,7 +322,7 @@
 <div class="post-content">
 
    
-    <div class="summary">A brief introduction to getting started with the National Early Warning Score (NEWS)2.</div>
+    <div class="summary">A brief introduction to getting started.</div>
    
 
    
@@ -353,17 +332,25 @@
   <div class="alert alert-warning" role="alert">
 <i class="fa fa-warning"></i> <b>Important:</b> This site is under development by NHS Digital, It is advised not to develop against these specifications until a formal announcement has been made.</div>
 
-<h1 id="introduction">Introduction</h1>
+<p>INTEROPen has developed the NEWS2 FHIR  specifications working in collaboration with NHS Digital as part FHIR Curation process with consultation with the INTEROPen community.</p>
 
-<p>This is the Implementation Guide for developing NEWS2 interoperability.</p>
+<p>The specification supports sharing of  NEWS2 final score and associated Vital Signs and their sub-scores  from Electronic Patient Records (EPRs)  to third party applications e.g. apps.</p>
 
-<p>Possible use cases where this Implementation Guide should be followed include:</p>
+<p>This  <a href="https://nhsconnect.github.io/fhir-policy/publication.html#FHIR-PUB-04" target="_blank"><strong>alpha</strong></a> specification was developed in a single sprint (3 weeks) starting on 1st October 2018 and a consultation call was held with the INTEROPen community on 12th October 2018. The recording of the call is available on youtube  <a href="https://www.youtube.com/watch?v=r9GVXTk4Qw4&amp;feature=youtu.be" target="_blank"><strong>here</strong></a>.  The presentation used in the call is available <a href="https://docs.google.com/presentation/d/1_FEnskc_xJWqg17XjBxvXutxEyWIaLA3N1K-U3h5CeE/edit?usp=sharing" target="_blank"><strong>here</strong></a>.</p>
+
+<p>This alpha specification will be tested initially at the <a href="http://www.interopen.org/events/" target="_blank"><strong>Inaugural INTEROPen Hackathon</strong></a> on 14th November. INTEROPen is actively seeking First of Type (FoT ) vendors and implementation sites to test this specification further.</p>
+
+<p>The INTEROPen vision is to create a library of nationally defined HL7® FHIR® resources and interaction patterns that implementers can adopt to simplify integration and interoperability within England’s health and social care systems.</p>
+
+<p>Find out more on the <a href="http://interopen.org/" target="_blank"><strong>INTEROPen website</strong></a>.</p>
+
+<p>Other possible use cases where this specification might apply include:</p>
 
 <ul>
   <li>A vital signs app to an Electronic Patient Record in a hospital</li>
   <li>Ambulance to Emergency Department</li>
   <li>Hospital to hospital patient transfers</li>
-  <li>Hospital look up of observations in GP systems (they have an integrated record which includes obs recorded in GP systems which can be viewed by hospital doctors in his Trust).</li>
+  <li>Hospital look up of observations in GP systems. They are able to import the Vital signs observations from GP Systems to build a single record of observations around a patient, so there is a baseline and trends available to all.</li>
   <li>Ambulance recording on remote devices and communicating to central ambulance record</li>
   <li>GP to ambulance</li>
 </ul>
@@ -371,15 +358,17 @@
 <h2 id="quick-links">Quick Links</h2>
 <ul>
   <li>
-    <p>The Message Design options for NEWS2 implementation are documented <a href="/messageoverview_overview.html">here</a></p>
+    <p>The Message Design options for NEWS2 implementation are documented <a href="/messageoverview_overview.html"><strong>here</strong></a></p>
   </li>
   <li>
-    <p>The FHIR resources used in a NEWS2 exchange are documented <a href="/news2_and_subscore_profiles.html">here</a></p>
+    <p>The FHIR resources used in a NEWS2 exchange are documented <a href="/news2_and_subscore_profiles.html"><strong>here</strong></a></p>
   </li>
 </ul>
 
 <h2 id="how-news2-works">How NEWS2 Works</h2>
-<p>The NEWS is based on a simple aggregate scoring system in which a score is allocated to physiological measurements, already recorded in routine practice, when patients present to, or are being monitored in hospital. Six simple physiological parameters plus an inspired oxygen observation form the basis of the scoring system:</p>
+<p><em>Reproduced from: Royal College of Physicians. National Early Warning Score (NEWS) 2: Standardising the assessment of acute-illness severity in the NHS. Updated report of a working party. London: RCP, 2017.</em></p>
+
+<p>The NEWS2 is based on a simple aggregate scoring system in which a score is allocated to physiological measurements, already recorded in routine practice, when patients present to, or are being monitored in hospital. Six simple physiological parameters plus an inspired oxygen observation form the basis of the scoring system:</p>
 
 <ol>
   <li>respiration rate</li>
@@ -391,13 +380,36 @@
   <li>inspired oxygen</li>
 </ol>
 
-<p><em>*The patient has new-onset confusion, disorientation and/or agitation, where previously their mental state was normal – this may be subtle. The patient may respond to questions coherently, but there is some confusion, disorientation and/or agitation. This would score 3 or 4 on the GCS (rather than the normal 5 for verbal response), and scores 3 on the NEWS system.</em></p>
+<p><em>*The patient has new-onset confusion, disorientation and/or agitation, where previously their mental state was normal – this may be subtle. The patient may respond to questions coherently, but there is some confusion, disorientation and/or agitation. This would score 3 or 4 on the GCS (rather than the normal 5 for verbal response), and scores 3 on the NEWS2 system.</em></p>
 
 <p>A score is allocated to each parameter as they are measured, with the magnitude of the score reflecting how extremely the parameter varies from the norm. The score is then aggregated and uplifted by 2 points for people requiring supplemental oxygen to maintain their recommended oxygen saturation.</p>
 
 <p>This is a pragmatic approach, with a key emphasis on system-wide standardisation and the use of physiological  parameters that are already routinely measured in NHS hospitals and in pre-hospital care, recorded on a standardised clinical chart – the NEWS2 chart.</p>
 
-<p>A full description of NEWS2 is available from the Royal College of Physicians <a href="https://www.rcplondon.ac.uk/projects/outputs/national-early-warning-score-news-2">here</a>.</p>
+<p>A full description of NEWS2 is available from the Royal College of Physicians <a href="https://www.rcplondon.ac.uk/projects/outputs/national-early-warning-score-news-2" target="_blank"><strong>here</strong></a>.</p>
+
+<p><img src="./images/NEWS2chart.png" alt="News2 Example Chart"></p>
+
+<h2 id="example-scenario">Example Scenario</h2>
+<p>Mr Smith is 52 year old gentleman who attends the emergency department with  fever, cough and pleuritic pain with following vitals:<br></p>
+<ul>
+  <li>Respiratory rate: 21/min<br>
+</li>
+  <li>Oxygen saturation : 93%<br>
+</li>
+  <li>On air<br>
+</li>
+  <li>Systolic blood pressure: 120 mmHg<br>
+</li>
+  <li>Heart rate : 95/min<br>
+</li>
+  <li>Consciousness: Alert<br>
+</li>
+  <li>Temperature: 38.5 °C<br>
+</li>
+</ul>
+
+<p><img src="./images/MrSmithScores.png" alt="Mr Smith Scores Example"></p>
 
 
 
@@ -424,9 +436,9 @@
                 <div class="col-lg-12 footer">
                     <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line">
                     <br>
-                    ©2018 Company Name<br>
+                    ©2018 INTEROPen &amp; NHS Digital<br>
                      Site last generated: Nov 5, 2018 <br>
-                    43f4a14ef0d949e6fa0aacb505bcf8cb444c469c<br>
+                    90b812acf0c0d4ed80b71513f261bb192132b7dd<br>
                     <br>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">

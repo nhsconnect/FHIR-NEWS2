@@ -8,7 +8,7 @@ summary: Guidance for populating the NEWS2 Pulse Rate Observation.
 toc: false
 ---
 
-The NEWS2 pulse rate observation uses the <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HeartRate-Observation-1">CareConnect-HeartRate-Observation-1</a> profile.
+The NEWS2 pulse rate observation uses the <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HeartRate-Observation-1" target="_blank">**CareConnect-HeartRate-Observation-1**</a> profile.
 
 # Guidance for Populating a NEWS2 Pulse Rate Observation #
 
@@ -17,10 +17,10 @@ This specification uses the CareConnect-HeartRate-Observation-1 to carry the NEW
 <br/><br/>
 _‘heart rate is typically measured electrically and pulse rate physically. If you have two heart beats close together – for example ectopic beats – you can’t physically discriminate. So the pulse rate would be lower than the heart rate. It is also common in atrial fibrillation – the true heart rate can be much higher than the pulse rate.’_
 <br/><br/>
-The curation team had to take this into account to create an option of sending an additional specific SNOMED CT code of "78564009 | Pulse rate" in the profile for the NEWS2 use case which will be marked as userSelected value="tue" in FHIR.  This allows the sender to specify that a pulse rate was taken which is refinement of the SNOMED CT concept heart rate. The sender could just send heart rate without the pulse rate if heart rate was recorded. In the scenario, when the pulse rate is different from heart rate, it is expected only heart rate will be sent as this is more accurate from clinical perspective. A fuller account of guidance on heart rate versus pulse rate can be found <a href="https://docs.google.com/document/d/1ByZ57nh6ZDjUEfBfPJjLAfSil_svpjBpzbarv7VB5QM/edit?usp=sharing">here</a>
+The curation team had to take this into account to create an option of sending an additional specific SNOMED CT code of "78564009 | Pulse rate" in the profile for the NEWS2 use case which will be marked as userSelected value="tue" in FHIR.  This allows the sender to specify that a pulse rate was taken which is refinement of the SNOMED CT concept heart rate. The sender could just send heart rate without the pulse rate if heart rate was recorded. In the scenario, when the pulse rate is different from heart rate, it is expected only heart rate will be sent as this is more accurate from clinical perspective. A fuller account of guidance on heart rate versus pulse rate can be found <a href="https://docs.google.com/document/d/1ByZ57nh6ZDjUEfBfPJjLAfSil_svpjBpzbarv7VB5QM/edit?usp=sharing" target="_blank">**here**</a>
 <br/><br/>
 
-When an Observation element has guidance "Not needed for NEWS2", this means that systems MAY populate the element (if appropriate) in the NEWS2 Observation.
+_Note that some elements are "Left uncurated as no use case in NEWS2", and are not needed for NEWS2._
 <br/><br/>
 <table>
 <tr><th>CareConnect-HeartRate-Observation-1 element</th><th>Population Guidance</th></tr>
@@ -28,7 +28,7 @@ When an Observation element has guidance "Not needed for NEWS2", this means that
 <tr><td>basedOn</td><td>Not needed for NEWS2</td></tr>
 <tr><td>status</td><td>Fixed to "final"</td></tr>
 <tr><td>category</td><td>code is fixed to "vital-signs" <br/>system is fixed to "http://hl7.org/fhir/observation-category"</td></tr>
-<tr><td>code</td><td>code MUST contain the <a href="https://www.hl7.org/fhir/observation-vitalsigns.html#vitals-table">Magic Code</a> as per the HL7 vital signs guidance, MUST also have a SNOMED CT equivalent Magic Code and MAY have a more refined SNOMED CT concept code<br/><br/>For NEWS2 Pulse Rate Magic Code, code is fixed to "8867-4", system is fixed to "http://loinc.org"<br/><br/>For NEWS2 pulse rate SNOMED CT Magic Code, code is fixed to "364075005", system is fixed to "http://snomed.info/sct"<br/>For more refined SNOMED CT codes, code is from the valueSet defined <a href="#more-refined-snomed-ct-codes-for-pulse-rate">here</a>, system is fixed to "http://snomed.info/sct".<br/><br/>If a more refined SNOMED CT code is used, then the userSelected element for that code MUST be checked. <br/><br/><b>Note:</b> If a pulse rate is being sent (rather than heart rate), then a more refined code of "78564009" , system "http://snomed.info/sct", and the userSelected element checked should be sent.</td></tr>
+<tr><td>code</td><td>code MUST contain the <a href="https://www.hl7.org/fhir/observation-vitalsigns.html#vitals-table" target="_blank"><b>Magic Code</b></a> as per the HL7 vital signs guidance, MUST also have a SNOMED CT equivalent Magic Code and MAY have a more refined SNOMED CT concept code<br/><br/>For NEWS2 Pulse Rate Magic Code, code is fixed to "8867-4", system is fixed to "http://loinc.org"<br/><br/>For NEWS2 pulse rate SNOMED CT Magic Code, code is fixed to "364075005", system is fixed to "http://snomed.info/sct"<br/>For more refined SNOMED CT codes, code is from the valueSet defined <a href="#more-refined-snomed-ct-codes-for-pulse-rate"><b>here</b></a>, system is fixed to "http://snomed.info/sct".<br/><br/>If a more refined SNOMED CT code is used, then the userSelected element for that code MUST be checked. <br/><br/><b>Note:</b> If a pulse rate is being sent (rather than heart rate), then a more refined code of "78564009" , system "http://snomed.info/sct", and the userSelected element checked should be sent.</td></tr>
 <tr><td>subject</td><td>A link to the Patient</td></tr>
 <tr><td>context</td><td>Not needed for NEWS2</td></tr>
 <tr><td>effective[x]</td><td>The date and time that the pulse rate was taken, using effectiveDateTime.</td></tr>

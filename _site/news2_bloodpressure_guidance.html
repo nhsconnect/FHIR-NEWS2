@@ -20,7 +20,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Guidance for populating the NEWS2 Blood Pressure Observation.">
 <meta name="keywords" content="designexplore,  explore, design, reference">
-<title>NEWS2 Blood Pressure Guidance | Site Title</title>
+<title>NEWS2 Blood Pressure Guidance | National Early Warning Score (NEWS2)</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 
@@ -106,17 +106,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="index.html"> <span class="projectTitle"> Site Title and Tag Line</span></a>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html"> <span class="projectTitle"> National Early Warning Score (NEWS2) | FHIR®</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <!-- entries without drop-downs appear here -->
-                
-                
-                
-                <li><a href="news.html">News</a></li>
-                
-                
                 
                 <!-- entries with drop-downs appear here -->
                 <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
@@ -127,22 +121,7 @@
                     <ul class="dropdown-menu">
                         
                         
-                        <li><a href="http://www.google.com/" target="_blank">External Link 1</a></li>
-                        
-                        
-                        
-                        <li><a href="http://www.yahoo.com/" target="_blank">External Link 2</a></li>
-                        
-                        
-                    </ul>
-                </li>
-                
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Capability Packs<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        
-                        
-                        <li><a href="capability_one.html">Capability One</a></li>
+                        <li><a href="http://www.interopen.org/" target="_blank">INTEROPen</a></li>
                         
                         
                     </ul>
@@ -350,13 +329,13 @@
 
     
 
-  <p>The NEWS2 blood pressure observation reading uses the <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-BloodPressure-Observation-1">CareConnect-BloodPressure-Observation-1</a>.</p>
+  <p>The NEWS2 blood pressure observation reading uses the <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-BloodPressure-Observation-1" target="_blank">CareConnect-BloodPressure-Observation-1</a>.</p>
 
 <p>Only the systolic part of the blood pressure observation is used in the NEWS2 score, but systems should send both the systolic and diastolic blood pressure components.</p>
 
 <h1 id="guidance-for-populating-a-news2-blood-pressure-observation">Guidance for Populating a NEWS2 Blood Pressure Observation</h1>
 
-<p>When an Observation element has guidance “Not needed for NEWS2”, this means that systems MAY populate the element (if appropriate) in the NEWS2 Observation.</p>
+<p><em>Note that some elements are “Left uncurated as no use case in NEWS2”, and are not needed for NEWS2.</em></p>
 
 <table>
 <tr>
@@ -369,7 +348,7 @@
 </tr>
 <tr>
 <td>basedOn</td>
-<td>Not needed for NEWS2</td>
+<td>Left uncurated as no use case in NEWS2</td>
 </tr>
 <tr>
 <td>status</td>
@@ -381,7 +360,7 @@
 </tr>
 <tr>
 <td>code</td>
-<td>code MUST contain the <a href="https://www.hl7.org/fhir/observation-vitalsigns.html#vitals-table">Magic Code</a> as per the HL7 vital signs guidance, MUST also have a SNOMED CT equivalent Magic Code and MAY have a more refined SNOMED CT concept code<br><br>For NEWS2 blood pressure Magic Code, code is fixed to "85354-9", system is fixed to "http://loinc.org"<br><br>For NEWS2 blood pressure SNOMED CT Magic Code, code is fixed to "75367002", system is fixed to "http://snomed.info/sct"<br>For more refined SNOMED CT codes, code is from the valueSet defined <a href="#more-refined-snomed-ct-codes-for-blood-pressure">here</a>, system is fixed to "http://snomed.info/sct".<br><br>If a more refined SNOMED CT code is used, then the userSelected element for that code MUST be checked. </td>
+<td>code MUST contain the <a href="https://www.hl7.org/fhir/observation-vitalsigns.html#vitals-table" target="_blank"><b>Magic Code</b></a> as per the HL7 vital signs guidance, MUST also have a SNOMED CT equivalent Magic Code and MAY have a more refined SNOMED CT concept code<br><br>For NEWS2 blood pressure Magic Code, code is fixed to "85354-9", system is fixed to "http://loinc.org"<br><br>For NEWS2 blood pressure SNOMED CT Magic Code, code is fixed to "75367002", system is fixed to "http://snomed.info/sct"<br>For more refined SNOMED CT codes, code is from the valueSet defined <a href="#more-refined-snomed-ct-codes-for-blood-pressure"><b>here</b></a>, system is fixed to "http://snomed.info/sct".<br><br>If a more refined SNOMED CT code is used, then the userSelected element for that code MUST be checked. </td>
 </tr>
 <tr>
 <td>subject</td>
@@ -389,7 +368,7 @@
 </tr>
 <tr>
 <td>context</td>
-<td>Not needed for NEWS2</td>
+<td>Left uncurated as no use case in NEWS2</td>
 </tr>
 <tr>
 <td>effective[x]</td>
@@ -397,7 +376,7 @@
 </tr>
 <tr>
 <td>issued</td>
-<td>Not needed for NEWS2</td>
+<td>Left uncurated as no use case in NEWS2</td>
 </tr>
 <tr>
 <td>performer</td>
@@ -405,11 +384,11 @@
 </tr>
 <tr>
 <td>dataAbsentReason</td>
-<td>Not needed for NEWS2 (as only observations with values should be sent for NEWS2).</td>
+<td>Left uncurated as no use case in NEWS2 (as only observations with values should be sent for NEWS2).</td>
 </tr>
 <tr>
 <td>interpretation</td>
-<td>Not needed for NEWS2</td>
+<td>Left uncurated as no use case in NEWS2</td>
 </tr>
 <tr>
 <td>comment</td>
@@ -417,19 +396,19 @@
 </tr>
 <tr>
 <td>bodySite</td>
-<td>Not needed for NEWS2</td>
+<td>Left uncurated as no use case in NEWS2</td>
 </tr>
 <tr>
 <td>method</td>
-<td>Not needed for NEWS2</td>
+<td>Left uncurated as no use case in NEWS2</td>
 </tr>
 <tr>
 <td>device</td>
-<td>Not needed for NEWS2</td>
+<td>Left uncurated as no use case in NEWS2</td>
 </tr>
 <tr>
 <td>referenceRange</td>
-<td>Not needed for NEWS2</td>
+<td>Left uncurated as no use case in NEWS2</td>
 </tr>
 <tr>
 <td>related</td>
@@ -437,7 +416,7 @@
 </tr>
 <tr>
 <td>component[systolic].code</td>
-<td>code MUST contain the <a href="https://www.hl7.org/fhir/observation-vitalsigns.html#vitals-table">Magic Code</a> as per the HL7 vital signs guidance, MUST also have a SNOMED CT equivalent Magic Code and MAY have a more refined SNOMED CT concept code<br><br>For NEWS2 systolic blood pressure Magic Code, code is fixed to "8480-6", system is fixed to "http://loinc.org"<br><br>For NEWS2 systolic blood pressure SNOMED CT Magic Code, code is fixed to "72313002", system is fixed to "http://snomed.info/sct"<br>For more refined SNOMED CT codes, code is from the valueSet defined <a href="#more-refined-snomed-ct-codes-for-systolic-blood-pressure">here</a>, system is fixed to "http://snomed.info/sct".<br><br>If a more refined SNOMED CT code is used, then the userSelected element for that code MUST be checked. </td>
+<td>code MUST contain the <a href="https://www.hl7.org/fhir/observation-vitalsigns.html#vitals-table" target="_blank"><b>Magic Code</b></a> as per the HL7 vital signs guidance, MUST also have a SNOMED CT equivalent Magic Code and MAY have a more refined SNOMED CT concept code<br><br>For NEWS2 systolic blood pressure Magic Code, code is fixed to "8480-6", system is fixed to "http://loinc.org"<br><br>For NEWS2 systolic blood pressure SNOMED CT Magic Code, code is fixed to "72313002", system is fixed to "http://snomed.info/sct"<br>For more refined SNOMED CT codes, code is from the valueSet defined <a href="#more-refined-snomed-ct-codes-for-systolic-blood-pressure">here</a>, system is fixed to "http://snomed.info/sct".<br><br>If a more refined SNOMED CT code is used, then the userSelected element for that code MUST be checked. </td>
 </tr>
 <tr>
 <td>component[systolic].value[x]</td>
@@ -445,19 +424,19 @@
 </tr>
 <tr>
 <td>component[systolic].dataAbsentReason</td>
-<td>Not needed for NEWS2</td>
+<td>Left uncurated as no use case in NEWS2</td>
 </tr>
 <tr>
 <td>component[systolic].interpretation</td>
-<td>Not needed for NEWS2</td>
+<td>Left uncurated as no use case in NEWS2</td>
 </tr>
 <tr>
 <td>component[systolic].referenceRange</td>
-<td>Not needed for NEWS2</td>
+<td>Left uncurated as no use case in NEWS2</td>
 </tr>
 <tr>
 <td>component[diastolic].code</td>
-<td>code MUST contain the <a href="https://www.hl7.org/fhir/observation-vitalsigns.html#vitals-table">Magic Code</a> as per the HL7 vital signs guidance, MUST also have a SNOMED CT equivalent Magic Code and MAY have a more refined SNOMED CT concept code<br><br>For NEWS2 systolic blood pressure Magic Code, code is fixed to "8462-4", system is fixed to "http://loinc.org"<br><br>For NEWS2 systolic blood pressure SNOMED CT Magic Code, code is fixed to "1091811000000102", system is fixed to "http://snomed.info/sct"<br>For more refined SNOMED CT codes, code is from the valueSet defined <a href="#more-refined-snomed-ct-codes-for-diastolic-blood-pressure">here</a>, system is fixed to "http://snomed.info/sct".<br><br>If a more refined SNOMED CT code is used, then the userSelected element for that code MUST be checked. </td>
+<td>code MUST contain the <a href="https://www.hl7.org/fhir/observation-vitalsigns.html#vitals-table" target="_blank"><b>Magic Code</b></a> as per the HL7 vital signs guidance, MUST also have a SNOMED CT equivalent Magic Code and MAY have a more refined SNOMED CT concept code<br><br>For NEWS2 systolic blood pressure Magic Code, code is fixed to "8462-4", system is fixed to "http://loinc.org"<br><br>For NEWS2 systolic blood pressure SNOMED CT Magic Code, code is fixed to "1091811000000102", system is fixed to "http://snomed.info/sct"<br>For more refined SNOMED CT codes, code is from the valueSet defined <a href="#more-refined-snomed-ct-codes-for-diastolic-blood-pressure">here</a>, system is fixed to "http://snomed.info/sct".<br><br>If a more refined SNOMED CT code is used, then the userSelected element for that code MUST be checked. </td>
 </tr>
 <tr>
 <td>component[diastolic].value[x]</td>
@@ -465,15 +444,15 @@
 </tr>
 <tr>
 <td>component[diastolic].dataAbsentReason</td>
-<td>Not needed for NEWS2</td>
+<td>Left uncurated as no use case in NEWS2</td>
 </tr>
 <tr>
 <td>component[diastolic].interpretation</td>
-<td>Not needed for NEWS2</td>
+<td>Left uncurated as no use case in NEWS2</td>
 </tr>
 <tr>
 <td>component[diastolic].referenceRange</td>
-<td>Not needed for NEWS2</td>
+<td>Left uncurated as no use case in NEWS2</td>
 </tr>
 </table>
 
@@ -543,9 +522,9 @@ OR «814081000000101|Diastolic blood pressure centile (observable entity)|)</p>
                 <div class="col-lg-12 footer">
                     <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line">
                     <br>
-                    ©2018 Company Name<br>
+                    ©2018 INTEROPen &amp; NHS Digital<br>
                      Site last generated: Nov 5, 2018 <br>
-                    43f4a14ef0d949e6fa0aacb505bcf8cb444c469c<br>
+                    90b812acf0c0d4ed80b71513f261bb192132b7dd<br>
                     <br>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">

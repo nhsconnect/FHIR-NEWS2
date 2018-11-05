@@ -18,9 +18,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="An overview of the NEWS 2 message design.">
+<meta name="description" content="An overview of the NEWS2 message design.">
 <meta name="keywords" content="designexplore,  explore, design, reference">
-<title>Message Design Overview | Site Title</title>
+<title>Message Design Overview | National Early Warning Score (NEWS2)</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 
@@ -106,17 +106,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="index.html"> <span class="projectTitle"> Site Title and Tag Line</span></a>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html"> <span class="projectTitle"> National Early Warning Score (NEWS2) | FHIR®</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <!-- entries without drop-downs appear here -->
-                
-                
-                
-                <li><a href="news.html">News</a></li>
-                
-                
                 
                 <!-- entries with drop-downs appear here -->
                 <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
@@ -127,22 +121,7 @@
                     <ul class="dropdown-menu">
                         
                         
-                        <li><a href="http://www.google.com/" target="_blank">External Link 1</a></li>
-                        
-                        
-                        
-                        <li><a href="http://www.yahoo.com/" target="_blank">External Link 2</a></li>
-                        
-                        
-                    </ul>
-                </li>
-                
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Capability Packs<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        
-                        
-                        <li><a href="capability_one.html">Capability One</a></li>
+                        <li><a href="http://www.interopen.org/" target="_blank">INTEROPen</a></li>
                         
                         
                     </ul>
@@ -343,51 +322,40 @@
 <div class="post-content">
 
    
-    <div class="summary">An overview of the NEWS 2 message design.</div>
+    <div class="summary">An overview of the NEWS2 message design.</div>
    
 
    
 
     
-    
-<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
-<script>
-$( document ).ready(function() {
-  // Handler for .ready() called.
 
-$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+  <p>The high level design of NEWS2 based on developing a number of INTEROPen CareConnect Level 2 and level 3 profiles as below:</p>
 
-/* this offset helps account for the space taken up by the floating toolbar. */
-$('#toc').on('click', 'a', function() {
-  var target = $(this.getAttribute('href'))
-    , scroll_target = target.offset().top
+<p><img src="./images/Level2Level3Profiles.png" alt="Level 2 and Level3 profiles"></p>
 
-  $(window).scrollTop(scroll_target - 10);
-  return false
-})
-  
-});
-</script>
+<p>The NEWS specification allows to send just the total NEWS2 score or NEWS2 score with parameter values or NEWS2 score, parameter values and their corresponding sub-scores.</p>
 
-<div id="toc"></div>
+<p>These three options within the message design for NEWS2, depend on the data available in the source system. The linkages between resources for the three options are shown below.</p>
 
-    
+<h2 id="1-systems-holding-the-news2-score-sub-scores--observations">1. Systems holding the NEWS2 score, sub-scores &amp; observations</h2>
 
-  <p>There are three options within the message design for NEWS2, depending on the data available in the source system. The linkages between resources for the three options are shown below.</p>
-
-<h1 id="1-systems-holding-the-news2-score-sub-scores--observations">1. Systems holding the NEWS2 score, sub-scores &amp; observations</h1>
+<p><strong>This is the recommended option to share NEWS2.</strong></p>
 
 <p>For systems that hold the NEWS2 score, the sub-scores and the associated observations</p>
 <ul>
   <li>the overall NEWS2 score is held in the NEWS2 profile</li>
-  <li>the NEWS2 sub-scores are held in NEWS2 sub-score profiles, <a href="https://www.hl7.org/fhir/references.html#contained"><strong>contained</strong></a> within the NEWS2 profile. The NEWS2 profile links to each sub-score profile using the a related link</li>
+  <li>the NEWS2 sub-scores are held in NEWS2 sub-score profiles, <a href="https://www.hl7.org/fhir/references.html#contained" target="_blank"><strong>contained</strong></a> within the NEWS2 profile. The NEWS2 profile links to each sub-score profile using the a related link</li>
   <li>the observations are referenced by the sub-score profiles using the related links</li>
 </ul>
 
 <p>The linkages for systems that hold the NEWS2 score, sub-scores and observations looks like this
 <img src="./images/NEWS2AllOfIt.png" alt="NEWS2 score, sub-scores and observations"></p>
 
-<h1 id="2-systems-holding-the-news2-score--observations-only">2. Systems holding the NEWS2 score &amp; observations only</h1>
+<p>The diagram below illustrates this with sample clinical data:</p>
+
+<p><img src="./images/NEWS2SampleClinicalData.png" alt="NEWS2 with sample clinical data"></p>
+
+<h2 id="2-systems-holding-the-news2-score--observations-only">2. Systems holding the NEWS2 score &amp; observations only</h2>
 
 <p>For systems that hold the NEWS2 score and the associated observations (but no sub-scores)</p>
 <ul>
@@ -398,7 +366,7 @@ $('#toc').on('click', 'a', function() {
 <p>The linkages for systems that hold the NEWS2 score and observations looks like this
 <img src="./images/NEWS2All.png" alt="NEWS2 score, sub-scores and observations"></p>
 
-<h1 id="3-systems-holding-just-the-news-2-score">3. Systems holding just the NEWS 2 score</h1>
+<h2 id="3-systems-holding-just-the-news-2-score">3. Systems holding just the NEWS 2 score</h2>
 
 <p>For systems that hold the NEWS2 score (but no sub-scores or associated observations)</p>
 <ul>
@@ -435,9 +403,9 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                     <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line">
                     <br>
-                    ©2018 Company Name<br>
+                    ©2018 INTEROPen &amp; NHS Digital<br>
                      Site last generated: Nov 5, 2018 <br>
-                    43f4a14ef0d949e6fa0aacb505bcf8cb444c469c<br>
+                    90b812acf0c0d4ed80b71513f261bb192132b7dd<br>
                     <br>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">

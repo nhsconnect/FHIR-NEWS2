@@ -20,7 +20,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Guidance for populating the NEWS2 Observation.">
 <meta name="keywords" content="designexplore,  explore, design, reference">
-<title>NEWS2 Observation Guidance | Site Title</title>
+<title>NEWS2 Observation Guidance | National Early Warning Score (NEWS2)</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 
@@ -106,17 +106,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="fa fa-home fa-lg navbar-brand" href="index.html"> <span class="projectTitle"> Site Title and Tag Line</span></a>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html"> <span class="projectTitle"> National Early Warning Score (NEWS2) | FHIR®</span></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <!-- entries without drop-downs appear here -->
-                
-                
-                
-                <li><a href="news.html">News</a></li>
-                
-                
                 
                 <!-- entries with drop-downs appear here -->
                 <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
@@ -127,22 +121,7 @@
                     <ul class="dropdown-menu">
                         
                         
-                        <li><a href="http://www.google.com/" target="_blank">External Link 1</a></li>
-                        
-                        
-                        
-                        <li><a href="http://www.yahoo.com/" target="_blank">External Link 2</a></li>
-                        
-                        
-                    </ul>
-                </li>
-                
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Capability Packs<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        
-                        
-                        <li><a href="capability_one.html">Capability One</a></li>
+                        <li><a href="http://www.interopen.org/" target="_blank">INTEROPen</a></li>
                         
                         
                     </ul>
@@ -350,11 +329,11 @@
 
     
 
-  <p>The NEWS2 observation the <a href="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-NEWS2-Observation-1">CareConnect-NEWS2-Observation-1</a> profile.</p>
+  <p>The NEWS2 observation the <a href="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-NEWS2-Observation-1" target="_blank"><strong>CareConnect-NEWS2-Observation-1</strong></a> profile.</p>
 
-<h1 id="guidance-for-populating-a-news2-observation">Guidance for Populating a NEWS2 Observation</h1>
+<h2 id="guidance-for-populating-a-news2-observation">Guidance for Populating a NEWS2 Observation</h2>
 
-<p>When an Observation element has guidance “Not needed for NEWS2”, this means that systems MAY populate the element (if appropriate) in the NEWS2 Observation.</p>
+<p><em>Note that some elements are “Left uncurated as no use case in NEWS2”, and are not needed for NEWS2.</em></p>
 
 <table>
 <tr>
@@ -367,7 +346,7 @@
 </tr>
 <tr>
 <td>basedOn</td>
-<td>Not needed for NEWS2</td>
+<td>Left uncurated as no use case in NEWS2</td>
 </tr>
 <tr>
 <td>status</td>
@@ -387,7 +366,7 @@
 </tr>
 <tr>
 <td>context</td>
-<td>Not needed for NEWS2</td>
+<td>Left uncurated as no use case in NEWS2</td>
 </tr>
 <tr>
 <td>effective[x]</td>
@@ -395,7 +374,7 @@
 </tr>
 <tr>
 <td>issued</td>
-<td>Not needed for NEWS2</td>
+<td>Left uncurated as no use case in NEWS2</td>
 </tr>
 <tr>
 <td>performer</td>
@@ -407,7 +386,7 @@
 </tr>
 <tr>
 <td>interpretation</td>
-<td>Not needed for NEWS2</td>
+<td>Left uncurated as no use case in NEWS2</td>
 </tr>
 <tr>
 <td>comment</td>
@@ -415,23 +394,33 @@
 </tr>
 <tr>
 <td>method</td>
-<td>Not needed for NEWS2</td>
+<td>Left uncurated as no use case in NEWS2</td>
 </tr>
 <tr>
 <td>device</td>
-<td>Not needed for NEWS2</td>
+<td>Left uncurated as no use case in NEWS2</td>
 </tr>
 <tr>
 <td>referenceRange</td>
-<td>Not needed for NEWS2</td>
+<td>Left uncurated as no use case in NEWS2</td>
 </tr>
 <tr>
 <td>related</td>
-<td>If NEWS2 sub-scores are being sent in the message, related will point to the contained CareConnect-SubScore-Observation-1 resources. For further information about referencing a contained resource see <a href="https://www.hl7.org/fhir/references.html#contained">here</a>. <br><br>If no NEWS2 sub-score are being sent, but supporting observations are being sent, then the related element will point to the supporting observations. Supporting observations are not contained withing the CareConnect-NEWS2-Observation-1 resource. The related links will reference the observations within the NEWS2 bundle. <br><br>If no sub-scores and no observations are being sent along with the NEWS2 score, then the related element is omitted.</td>
+<td>If NEWS2 sub-scores are being sent in the message, related will point to the contained <a href="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-SubScore-Observation-1" target="_blank"><b>CareConnect-SubScore-Observation-1</b></a> resources (population guidance is <a href="http://127.0.0.1:4005/news2_subscore_guidance.html"><b>here</b></a>). For further information about referencing a contained resource see <a href="https://www.hl7.org/fhir/references.html#contained" target="_blank"><b>here</b></a>. 
+<br><br>If no NEWS2 sub-score are being sent, but supporting observations are being sent, then the related element will point to the supporting observations. Supporting observations are not contained withing the CareConnect-NEWS2-Observation-1 resource. The related links will reference the observations within the NEWS2 bundle. The related observations are<br>
+<a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-BloodPressure-Observation-1" target="_blank"><b>CareConnect-BloodPressure-Observation-1</b></a> (population guidance <a href="./news2_bloodpressure_guidance.html"><b>here</b></a>) <br>
+<a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-BodyTemperature-Observation-1" target="_blank"><b>CareConnect-BodyTemperature-Observation-1</b></a> (population guidance <a href="./news2_bodytemperature_guidance.html"><b>here</b></a>)<br>
+<a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ACPVU-Observation-1" target="_blank"><b>CareConnect-ACPVU-Observation-1</b></a> (population guidance <a href="./news2_acpvu_guidance.html"><b>here</b></a>)<br>
+<a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HeartRate-Observation-1" target="_blank"><b>CareConnect-HeartRate-Observation-1</b></a> (population guidance <a href="./news2_pulserate_guidance.html"><b>here</b></a>)<br>
+<a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-InspiredOxygen-Observation-1" target="_blank"><b>CareConnect-InspiredOxygen-Observation-1</b></a> (population guidance <a href="./news2_inspiredoxygen_guidance.html"><b>here</b></a>)<br>
+<a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-OxygenSaturation-Observation-1" target="_blank"><b>CareConnect-OxygenSaturation-Observation-1</b></a> (population guidance <a href="./news2_oxygensaturation_guidance.html"><b>here</b></a>)<br>
+<a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-RespiratoryRate-Observation-1" target="_blank"><b>CareConnect-RespiratoryRate-Observation-1</b></a> (population guidance <a href="./news2_respiratoryrate_guidance.html"><b>here</b></a>)
+
+<br><br>If no sub-scores and no observations are being sent along with the NEWS2 score, then the related element is omitted.</td>
 </tr>
 </table>
 
-<h1 id="examples">Examples</h1>
+<h2 id="examples">Examples</h2>
 
 <h2 id="news2-score">NEWS2 Score</h2>
 <script src="https://gist.github.com/IOPS-DEV/6b6091d78652b9b0e2bc18c65b6b1543.js"></script>
@@ -469,9 +458,9 @@
                 <div class="col-lg-12 footer">
                     <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line">
                     <br>
-                    ©2018 Company Name<br>
+                    ©2018 INTEROPen &amp; NHS Digital<br>
                      Site last generated: Nov 5, 2018 <br>
-                    43f4a14ef0d949e6fa0aacb505bcf8cb444c469c<br>
+                    90b812acf0c0d4ed80b71513f261bb192132b7dd<br>
                     <br>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">
