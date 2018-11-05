@@ -249,21 +249,7 @@
             
             
             
-            <li><a href="messaging_architecture_overview.html">Overview</a></li>
-            
-            
-            
-            
-            
-            
-            <li><a href="messaging_transport_overview.html">Transport</a></li>
-            
-            
-            
-            
-            
-            
-            <li><a href="messageoverview_overview.html">Message Design</a></li>
+            <li><a href="messageoverview_overview.html">Message Design Overview</a></li>
             
             
             
@@ -363,31 +349,11 @@
    
 
     
-    
-<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
-<script>
-$( document ).ready(function() {
-  // Handler for .ready() called.
 
-$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+  <div class="alert alert-warning" role="alert">
+<i class="fa fa-warning"></i> <b>Important:</b> This site is under development by NHS Digital, It is advised not to develop against these specifications until a formal announcement has been made.</div>
 
-/* this offset helps account for the space taken up by the floating toolbar. */
-$('#toc').on('click', 'a', function() {
-  var target = $(this.getAttribute('href'))
-    , scroll_target = target.offset().top
-
-  $(window).scrollTop(scroll_target - 10);
-  return false
-})
-  
-});
-</script>
-
-<div id="toc"></div>
-
-    
-
-  <h1 id="alpha">Alpha</h1>
+<h1 id="alpha">Alpha</h1>
 <p>This implementation guidance is the Aphla release to support the development of NEWS2.</p>
 
 <h1 id="semantic-versioning">Semantic Versioning</h1>
@@ -398,7 +364,7 @@ MINOR version when you add functionality in a backwards-compatible manner, and
 PATCH version when you make backwards-compatible bug fixes.
 Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.</p>
 
-<p>A pre-release version MAY be denoted by appending a hyphen (refer to [Semantic Versioning - Item 9] (http://semver.org/#spec-item-9))</p>
+<p>A pre-release version MAY be denoted by appending a hyphen. Refer to Semantic Versioning - Item 9 see <a href="http://semver.org/#spec-item-9"><strong>here</strong></a></p>
 
 <h1 id="pre-release-labels">Pre-release Labels</h1>
 <p>These labels will be taken from the GDS development process stages, and will be one of:</p>
@@ -440,8 +406,8 @@ Additional labels for pre-release and build metadata are available as extensions
                     <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line">
                     <br>
                     ©2018 Company Name<br>
-                     Site last generated: Oct 31, 2018 <br>
-                    fd17e38868bbe7a07f43b2035fe13e4a37649dcf<br>
+                     Site last generated: Nov 1, 2018 <br>
+                    43f4a14ef0d949e6fa0aacb505bcf8cb444c469c<br>
                     <br>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">

@@ -25,13 +25,7 @@ entries:
   - title: Messaging Architecture
     output: web
     folderitems:
-    - title: Overview
-      url: /messaging_architecture_overview.html
-      output: web
-    - title: Transport
-      url: /messaging_transport_overview.html
-      output: web
-    - title: Message Design
+    - title: Message Design Overview
       url: /messageoverview_overview.html
       output: web
     - title: NEWS2 Profiles

@@ -38,12 +38,6 @@
 <loc>http://localhost:4005/messageoverview_overview.html</loc>
 </url>
 <url>
-<loc>http://localhost:4005/messaging_architecture_overview.html</loc>
-</url>
-<url>
-<loc>http://localhost:4005/messaging_transport_overview.html</loc>
-</url>
-<url>
 <loc>http://localhost:4005/news.html</loc>
 </url>
 <url>
@@ -57,6 +51,9 @@
 </url>
 <url>
 <loc>http://localhost:4005/news2_bodytemperature_guidance.html</loc>
+</url>
+<url>
+<loc>http://localhost:4005/news2_get_score.html</loc>
 </url>
 <url>
 <loc>http://localhost:4005/news2_inspiredoxygen_guidance.html</loc>

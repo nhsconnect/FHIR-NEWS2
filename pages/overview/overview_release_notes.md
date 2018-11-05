@@ -8,4 +8,8 @@ summary: "Release notes."
 toc: true
 ---
 
-This site is under active development by NHS Digital and is intended to provide the FHIR messaging components for NEWS 2. This project is being developed using an agile methodology so iterative updates to content will be added on a regular basis, and remains subject to clinical review. Changes to this specification will be documented here.
+{% include important.html content="This site is under development by NHS Digital, It is advised not to develop against these specifications until a formal announcement has been made." %}
+
+## 1.0.0-alpha ##
+
+Initial release of the NEWS2 specification

@@ -4,9 +4,13 @@ keywords: homepage
 tags: [getting_started]
 sidebar: overview_sidebar
 permalink: index.html
-toc: true
-summary: A brief introduction to getting started.
+toc: false
+summary: A brief introduction to getting started with the National Early Warning Score (NEWS)2.
 ---
+
+{% include important.html content="This site is under development by NHS Digital, It is advised not to develop against these specifications until a formal announcement has been made." %}
+
+# Introduction #
 
 This is the Implementation Guide for developing NEWS2 interoperability.
 
@@ -19,12 +23,12 @@ Possible use cases where this Implementation Guide should be followed include:
 * Ambulance recording on remote devices and communicating to central ambulance record
 * GP to ambulance
 
-# Quick Links #
+## Quick Links ##
 * The Message Design options for NEWS2 implementation are documented <a href="/messageoverview_overview.html">here</a>
 
 * The FHIR resources used in a NEWS2 exchange are documented <a href="/news2_and_subscore_profiles.html">here</a>
 
-# How NEWS2 Works #
+## How NEWS2 Works ##
 The NEWS is based on a simple aggregate scoring system in which a score is allocated to physiological measurements, already recorded in routine practice, when patients present to, or are being monitored in hospital. Six simple physiological parameters plus an inspired oxygen observation form the basis of the scoring system:
 
 1. respiration rate

@@ -5,8 +5,10 @@ tags: [development]
 sidebar: overview_sidebar
 permalink: overview_guide_versioning.html
 summary: "An overview of how this implementation guide is versioned."
-toc: true
+toc: false
 ---
+
+{% include important.html content="This site is under development by NHS Digital, It is advised not to develop against these specifications until a formal announcement has been made." %}
 
 # Alpha #
 This implementation guidance is the Aphla release to support the development of NEWS2.
@@ -19,7 +21,7 @@ MINOR version when you add functionality in a backwards-compatible manner, and
 PATCH version when you make backwards-compatible bug fixes.
 Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 
-A pre-release version MAY be denoted by appending a hyphen (refer to [Semantic Versioning - Item 9] (http://semver.org/#spec-item-9))
+A pre-release version MAY be denoted by appending a hyphen. Refer to Semantic Versioning - Item 9 see <a href="http://semver.org/#spec-item-9">**here**</a>
 
 # Pre-release Labels #
 These labels will be taken from the GDS development process stages, and will be one of:

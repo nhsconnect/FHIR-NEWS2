@@ -18,7 +18,7 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="A brief introduction to getting started.">
+<meta name="description" content="A brief introduction to getting started with the National Early Warning Score (NEWS)2.">
 <meta name="keywords" content="getting_started,  homepage">
 <title>National Early Warning Score (NEWS)2 | Site Title</title>
 <link rel="stylesheet" href="css/syntax.css">
@@ -249,21 +249,7 @@
             
             
             
-            <li><a href="messaging_architecture_overview.html">Overview</a></li>
-            
-            
-            
-            
-            
-            
-            <li><a href="messaging_transport_overview.html">Transport</a></li>
-            
-            
-            
-            
-            
-            
-            <li><a href="messageoverview_overview.html">Message Design</a></li>
+            <li><a href="messageoverview_overview.html">Message Design Overview</a></li>
             
             
             
@@ -357,37 +343,19 @@
 <div class="post-content">
 
    
-    <div class="summary">A brief introduction to getting started.</div>
+    <div class="summary">A brief introduction to getting started with the National Early Warning Score (NEWS)2.</div>
    
 
    
 
     
-    
-<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
-<script>
-$( document ).ready(function() {
-  // Handler for .ready() called.
 
-$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+  <div class="alert alert-warning" role="alert">
+<i class="fa fa-warning"></i> <b>Important:</b> This site is under development by NHS Digital, It is advised not to develop against these specifications until a formal announcement has been made.</div>
 
-/* this offset helps account for the space taken up by the floating toolbar. */
-$('#toc').on('click', 'a', function() {
-  var target = $(this.getAttribute('href'))
-    , scroll_target = target.offset().top
+<h1 id="introduction">Introduction</h1>
 
-  $(window).scrollTop(scroll_target - 10);
-  return false
-})
-  
-});
-</script>
-
-<div id="toc"></div>
-
-    
-
-  <p>This is the Implementation Guide for developing NEWS2 interoperability.</p>
+<p>This is the Implementation Guide for developing NEWS2 interoperability.</p>
 
 <p>Possible use cases where this Implementation Guide should be followed include:</p>
 
@@ -400,7 +368,7 @@ $('#toc').on('click', 'a', function() {
   <li>GP to ambulance</li>
 </ul>
 
-<h1 id="quick-links">Quick Links</h1>
+<h2 id="quick-links">Quick Links</h2>
 <ul>
   <li>
     <p>The Message Design options for NEWS2 implementation are documented <a href="/messageoverview_overview.html">here</a></p>
@@ -410,7 +378,7 @@ $('#toc').on('click', 'a', function() {
   </li>
 </ul>
 
-<h1 id="how-news2-works">How NEWS2 Works</h1>
+<h2 id="how-news2-works">How NEWS2 Works</h2>
 <p>The NEWS is based on a simple aggregate scoring system in which a score is allocated to physiological measurements, already recorded in routine practice, when patients present to, or are being monitored in hospital. Six simple physiological parameters plus an inspired oxygen observation form the basis of the scoring system:</p>
 
 <ol>
@@ -457,8 +425,8 @@ $('#toc').on('click', 'a', function() {
                     <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line">
                     <br>
                     ©2018 Company Name<br>
-                     Site last generated: Oct 31, 2018 <br>
-                    fd17e38868bbe7a07f43b2035fe13e4a37649dcf<br>
+                     Site last generated: Nov 1, 2018 <br>
+                    43f4a14ef0d949e6fa0aacb505bcf8cb444c469c<br>
                     <br>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">

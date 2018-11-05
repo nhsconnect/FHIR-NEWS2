@@ -249,21 +249,7 @@
             
             
             
-            <li><a href="messaging_architecture_overview.html">Overview</a></li>
-            
-            
-            
-            
-            
-            
-            <li><a href="messaging_transport_overview.html">Transport</a></li>
-            
-            
-            
-            
-            
-            
-            <li><a href="messageoverview_overview.html">Message Design</a></li>
+            <li><a href="messageoverview_overview.html">Message Design Overview</a></li>
             
             
             
@@ -368,31 +354,31 @@
 
 <p>Sending the CareConnect-NEWS2-Observation-1 is mandatory for any system communicating a NEWS2 score.</p>
 
-<p><a href="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-NEWS2-Observation-1">CareConnect-NEWS2-Observation-1</a> - The overall NEWS2 score is reported in the NEWS2 Observation profile. If available, the NEWS2 Observation profile will contain the NEWS2 Sub-scores. For further information on contained resources see <a href="https://www.hl7.org/fhir/references.html#contained">here.</a> Guidance for populating the NEWS2 Observation profile is <a href="news2_observation_guidance.html">here.</a></p>
+<p><a href="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-NEWS2-Observation-1"><strong>CareConnect-NEWS2-Observation-1</strong></a> - The overall NEWS2 score is reported in the NEWS2 Observation profile. If available, the NEWS2 Observation profile will contain the NEWS2 Sub-scores. For further information on contained resources see <a href="https://www.hl7.org/fhir/references.html#contained"><strong>here</strong></a>. Guidance for populating the NEWS2 Observation profile is <a href="./news2_observation_guidance.html"><strong>here</strong></a>.</p>
 
 <h1 id="careconnect-sub-score-profile">CareConnect Sub-score Profile</h1>
 
 <p>Sending the CareConnect-SubscoreObservation-1 is not mandated, but if source systems hold the sub-scores, they <strong>SHOULD</strong> be communicated.</p>
 
-<p><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Subscore-Observation-1">CareConnect-Subscore-Observation-1</a> - Used to hold the sub-scores of the observations that go to make up the overall NEWS2 score. For further information on contained resources see <a href="https://www.hl7.org/fhir/references.html#contained">here</a>. There will be a CareConnect-SubscoreObservation-1 per observation. The CareConnect-SubscoreObservation-1 will reference its relevant observation using the Observation.related reference. Guidance for populating the CareConnect-SubscoreObservation-1 profile for NEWS2 is <a href="/news2_subscore_guidance.html">here</a>.</p>
+<p><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Subscore-Observation-1"><strong>CareConnect-Subscore-Observation-1</strong></a> - Used to hold the sub-scores of the observations that go to make up the overall NEWS2 score. For further information on contained resources see <a href="https://www.hl7.org/fhir/references.html#contained"><strong>here</strong></a>. There will be a CareConnect-SubscoreObservation-1 per observation. The CareConnect-SubscoreObservation-1 will reference its relevant observation using the Observation.related reference. Guidance for populating the CareConnect-SubscoreObservation-1 profile for NEWS2 is <a href="./news2_subscore_guidance.html"><strong>here</strong></a>.</p>
 
 <h1 id="news2-observation-profiles">NEWS2 Observation Profiles</h1>
 
 <p>Sending the NEWS2 Observations is not mandated, but if the Observations are available on the source system they <strong>SHOULD</strong> be included as part of sending a NEWS2 score.</p>
 
-<p><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-BloodPressure-Observation-1">CareConnect-BloodPressure-Observation-1</a> - The systolic blood pressure used in generate the NEWS2 score. Guidance for populating the CareConnect-BloodPressure-Observation-1 profile for NEWS2 is <a href="/news2_bloodpressure_guidance.html">here</a>.</p>
+<p><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-BloodPressure-Observation-1"><strong>CareConnect-BloodPressure-Observation-1</strong></a> - The systolic blood pressure used in generate the NEWS2 score. Guidance for populating the CareConnect-BloodPressure-Observation-1 profile for NEWS2 is <a href="./news2_bloodpressure_guidance.html"><strong>here</strong></a>.</p>
 
-<p><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-BodyTemperature-Observation-1">CareConnect-BodyTemperature-Observation-1</a> - The body temperature reading used in generate the NEWS2 score. Guidance for populating the CareConnect-BodyTemperature-Observation-1 profile for NEWS2 is <a href="/news2_bodytemperature_guidance.html">here</a>.</p>
+<p><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-BodyTemperature-Observation-1"><strong>CareConnect-BodyTemperature-Observation-1</strong></a> - The body temperature reading used in generate the NEWS2 score. Guidance for populating the CareConnect-BodyTemperature-Observation-1 profile for NEWS2 is <a href="./news2_bodytemperature_guidance.html"><strong>here</strong></a>.</p>
 
-<p><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-AVCPU-Observation-1">CareConnect-ACPVU-Observation-1</a> - The ACPUV observation used in generate the NEWS2 score. Guidance for populating the CareConnect-ACPUV-Observation-1 profile for NEWS2 is <a href="/news2_acpvu_guidance.html">here</a>.</p>
+<p><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-AVCPU-Observation-1"><strong>CareConnect-ACPVU-Observation-1</strong></a> - The ACPUV observation used in generate the NEWS2 score. Guidance for populating the CareConnect-ACPUV-Observation-1 profile for NEWS2 is <a href="./news2_acpvu_guidance.html"><strong>here</strong></a>.</p>
 
-<p><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HeartRate-Observation-1">CareConnect-HeartRate-Observation-1</a> - The pulse rate reading used in generate the NEWS2 score. Guidance for populating the CareConnect-HeartRate-Observation-1 profile for NEWS2 is <a href="/news2_pulserate_guidance.html">here</a>.</p>
+<p><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HeartRate-Observation-1"><strong>CareConnect-HeartRate-Observation-1</strong></a> - The pulse rate reading used in generate the NEWS2 score. Guidance for populating the CareConnect-HeartRate-Observation-1 profile for NEWS2 is <a href="./news2_pulserate_guidance.html"><strong>here</strong></a>.</p>
 
-<p><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-InspiredOxygen-Observation-1">CareConnect-InspiredOxygen-Observation-1</a> - The inspired oxygen observation used in generate the NEWS2 score. Guidance for populating the CareConnect-InspiredOxygen-Observation-1 profile for NEWS2 is <a href="/news2_inspiredoxygen_guidance.html">here</a>.</p>
+<p><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-InspiredOxygen-Observation-1"><strong>CareConnect-InspiredOxygen-Observation-1</strong></a> - The inspired oxygen observation used in generate the NEWS2 score. Guidance for populating the CareConnect-InspiredOxygen-Observation-1 profile for NEWS2 is <a href="./news2_inspiredoxygen_guidance.html"><strong>here</strong></a>.</p>
 
-<p><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-OxygenSaturation-Observation-1">CareConnect-OxygenSaturation-Observation-1</a> - The oxygen saturation reading used in generate the NEWS2 score. Guidance for populating the CareConnect-oxygensaturation-Observation-1 profile for NEWS2 is <a href="/news2_oxygensaturation_guidance.html">here</a>.</p>
+<p><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-OxygenSaturation-Observation-1"><strong>CareConnect-OxygenSaturation-Observation-1</strong></a> - The oxygen saturation reading used in generate the NEWS2 score. Guidance for populating the CareConnect-oxygensaturation-Observation-1 profile for NEWS2 is <a href="./news2_oxygensaturation_guidance.html"><strong>here</strong></a>.</p>
 
-<p><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-RespiratoryRate-Observation-1">CareConnect-RespiratoryRate-Observation-1</a> - The respiratory rate reading used in generate the NEWS2 score. Guidance for populating the CareConnect-RespiratoryRate-Observation-1 profile for NEWS2 is <a href="/news2_respiratoryrate_guidance.html">here</a>.</p>
+<p><a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-RespiratoryRate-Observation-1"><strong>CareConnect-RespiratoryRate-Observation-1</strong></a> - The respiratory rate reading used in generate the NEWS2 score. Guidance for populating the CareConnect-RespiratoryRate-Observation-1 profile for NEWS2 is <a href="./news2_respiratoryrate_guidance.html"><strong>here</strong></a>.</p>
 
 
     <div class="tags">
@@ -421,8 +407,8 @@
                     <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line">
                     <br>
                     ©2018 Company Name<br>
-                     Site last generated: Oct 31, 2018 <br>
-                    fd17e38868bbe7a07f43b2035fe13e4a37649dcf<br>
+                     Site last generated: Nov 1, 2018 <br>
+                    43f4a14ef0d949e6fa0aacb505bcf8cb444c469c<br>
                     <br>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">

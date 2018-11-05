@@ -8,19 +8,6 @@ summary: "Glossary of terms"
 toc: false
 ---
 
-Glossary of common terms and abbreviations used though-out the documentation.
+A full list of Glossary terms used by NHS Projects can be found at the link below:
 
-First of Type
-: {{site.data.glossary.first_of_type}}
-
-Consumer
-: {{site.data.glossary.consumer}}
-
-Provider
-: {{site.data.glossary.provider}}
-
-Accreditation
-: {{site.data.glossary.accreditation}}
-
-Assurance
-: {{site.data.glossary.assurance}}
+<a href="https://developer.nhs.uk/library/glossary/" target="_blank">**NHS Developer Network - Glossary**</a>
