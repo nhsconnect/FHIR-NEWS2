@@ -2,7 +2,7 @@
 <Observation xmlns="http://hl7.org/fhir">
 	<id value="9011b916-b541-4907-9d7a-2d675eccba60"/>
 	<meta>
-		<profile value="hhttps://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ACPVU-Observation-1"/>
+		<profile value="hhttps://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ACVPU-Observation-1"/>
 	</meta>
 	<status value="final"/>
 	<code>

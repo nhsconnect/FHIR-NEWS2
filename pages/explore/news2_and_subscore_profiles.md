@@ -30,7 +30,7 @@ Sending the NEWS2 Observations is not mandated, but if the Observations are avai
 
 <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-BodyTemperature-Observation-1" target="_blank">**CareConnect-BodyTemperature-Observation-1**</a> - The body temperature reading used in generate the NEWS2 score. Guidance for populating the CareConnect-BodyTemperature-Observation-1 profile for NEWS2 is <a href="./news2_bodytemperature_guidance.html">**here**</a>.
 
-<a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-AVCPU-Observation-1" target="_blank">**CareConnect-ACPVU-Observation-1**</a> - The ACPUV observation used in generate the NEWS2 score. Guidance for populating the CareConnect-ACPUV-Observation-1 profile for NEWS2 is <a href="./news2_acpvu_guidance.html">**here**</a>.
+<a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ACVPU-Observation-1" target="_blank">**CareConnect-ACVPU-Observation-1**</a> - The ACPUV observation used in generate the NEWS2 score. Guidance for populating the CareConnect-ACPUV-Observation-1 profile for NEWS2 is <a href="./news2_acvpu_guidance.html">**here**</a>.
 
 <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-HeartRate-Observation-1" target="_blank">**CareConnect-HeartRate-Observation-1**</a> - The pulse rate reading used in generate the NEWS2 score. Guidance for populating the CareConnect-HeartRate-Observation-1 profile for NEWS2 is <a href="./news2_pulserate_guidance.html">**here**</a>.
 
