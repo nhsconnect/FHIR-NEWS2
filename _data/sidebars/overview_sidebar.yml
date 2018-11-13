@@ -38,12 +38,12 @@ entries:
     - title: Overview
       url: /develop_overview.html
       output: web
-    - title: Messaging Over MESH
-      url: /messaging_over_mesh.html
-      output: web    
-    - title: API Call
-      url: /messaging_over_api.html
-      output: web    
+    #- title: Messaging Over MESH
+    #  url: /messaging_over_mesh.html
+    #  output: web    
+    #- title: API Call
+    #  url: /messaging_over_api.html
+    #  output: web    
 
   - title: Communications
     output: web
