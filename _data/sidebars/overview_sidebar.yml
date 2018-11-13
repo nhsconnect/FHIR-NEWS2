@@ -31,7 +31,16 @@ entries:
     - title: NEWS2 Profiles
       url: /news2_and_subscore_profiles.html
       output: web
-    
+
+  - title: Example Scenarios
+    url: /engage_scenario.html
+    output: web
+    folderitems:
+    - title: Mr Smith
+      url: /engage_mr_smith.html
+      output: web, pdf
+      type: homepage
+      
   - title: Develop
     output: web
     folderitems:
