@@ -246,26 +246,28 @@
     
     </li>
 <li>
+        <a href="#">Example Scenarios</a>
+        <ul>
+            
+            
+            
+            <li><a href="engage_mr_smith.html">Mr Smith</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    </li>
+<li>
         <a href="#">Develop</a>
         <ul>
             
             
             
             <li><a href="develop_overview.html">Overview</a></li>
-            
-            
-            
-            
-            
-            
-            <li><a href="messaging_over_mesh.html">Messaging Over MESH</a></li>
-            
-            
-            
-            
-            
-            
-            <li><a href="messaging_over_api.html">API Call</a></li>
             
             
             
@@ -336,9 +338,9 @@
 <h3 id="note-on-heart-rate-versus-pulse-rate">Note on heart rate versus pulse rate</h3>
 <p>This specification uses the CareConnect-HeartRate-Observation-1 to carry the NEWS2 Pulse Rate observation. It has been noted that heart rate and pulse rate are different measures, and not necessarily be interchangeable.
 <br><br>
-<em>‘heart rate is typically measured electrically and pulse rate physically. If you have two heart beats close together – for example ectopic beats – you can’t physically discriminate. So the pulse rate would be lower than the heart rate. It is also common in atrial fibrillation – the true heart rate can be much higher than the pulse rate.’</em>
+<em>‘Heart rate is typically measured electrically and pulse rate physically. If you have two heart beats close together – for example, ectopic beats – you can’t physically discriminate. So the pulse rate would be lower than the heart rate. It is also common in atrial fibrillation – the true heart rate can be much higher than the pulse rate.’</em>
 <br><br>
-The curation team had to take this into account to create an option of sending an additional specific SNOMED CT code of “78564009 | Pulse rate” in the profile for the NEWS2 use case which will be marked as userSelected value=”tue” in FHIR.  This allows the sender to specify that a pulse rate was taken which is refinement of the SNOMED CT concept heart rate. The sender could just send heart rate without the pulse rate if heart rate was recorded. In the scenario, when the pulse rate is different from heart rate, it is expected only heart rate will be sent as this is more accurate from clinical perspective. A fuller account of guidance on heart rate versus pulse rate can be found <a href="https://docs.google.com/document/d/1ByZ57nh6ZDjUEfBfPJjLAfSil_svpjBpzbarv7VB5QM/edit?usp=sharing" target="_blank"><strong>here</strong></a>
+The curation team had to take this into account to create an option of sending an additional specific SNOMED CT code of “78564009 | Pulse rate” in the profile for the NEWS2 use case which will be marked as userSelected value=”true” in FHIR.  This allows the sender to specify that a pulse rate was taken which is a refinement of the SNOMED CT concept heart rate. The sender could just send heart rate without the pulse rate if the heart rate was recorded. In the scenario, when the pulse rate is different from heart rate, it is expected only heart rate will be sent as this is more accurate from a clinical perspective. A fuller account of guidance on heart rate versus pulse rate can be found <a href="https://docs.google.com/document/d/1ByZ57nh6ZDjUEfBfPJjLAfSil_svpjBpzbarv7VB5QM/edit?usp=sharing" target="_blank"><strong>here</strong></a>.
 <br><br></p>
 
 <p><em>Note that some elements are “Left uncurated as no use case in NEWS2”, and are not needed for NEWS2.</em>
@@ -350,7 +352,7 @@ The curation team had to take this into account to create an option of sending a
 </tr>
 <tr>
 <td>identifier</td>
-<td>A unique identifier assigned to this observation (such as a generated universally unique identifier (uuid))</td>
+<td>A unique identifier assigned to this observation (such as a generated Universally Unique Identifier {UUID})</td>
 </tr>
 <tr>
 <td>basedOn</td>
@@ -362,11 +364,11 @@ The curation team had to take this into account to create an option of sending a
 </tr>
 <tr>
 <td>category</td>
-<td>code is fixed to "vital-signs" <br>system is fixed to "http://hl7.org/fhir/observation-category"</td>
+<td>The code is fixed to "vital-signs" <br>The system is fixed to "http://hl7.org/fhir/observation-category"</td>
 </tr>
 <tr>
 <td>code</td>
-<td>code MUST contain the <a href="https://www.hl7.org/fhir/observation-vitalsigns.html#vitals-table" target="_blank"><b>Magic Code</b></a> as per the HL7 vital signs guidance, MUST also have a SNOMED CT equivalent Magic Code and MAY have a more refined SNOMED CT concept code<br><br>For NEWS2 Pulse Rate Magic Code, code is fixed to "8867-4", system is fixed to "http://loinc.org"<br><br>For NEWS2 pulse rate SNOMED CT Magic Code, code is fixed to "364075005", system is fixed to "http://snomed.info/sct"<br>For more refined SNOMED CT codes, code is from the valueSet defined <a href="#more-refined-snomed-ct-codes-for-pulse-rate"><b>here</b></a>, system is fixed to "http://snomed.info/sct".<br><br>If a more refined SNOMED CT code is used, then the userSelected element for that code MUST be checked. <br><br><b>Note:</b> If a pulse rate is being sent (rather than heart rate), then a more refined code of "78564009" , system "http://snomed.info/sct", and the userSelected element checked should be sent.</td>
+<td>The code MUST contain the <a href="https://www.hl7.org/fhir/observation-vitalsigns.html#vitals-table" target="_blank"><b>Magic Code</b></a> as per the HL7 vital signs guidance, MUST also have a SNOMED CT equivalent Magic Code and MAY have a more refined SNOMED CT concept code<br><br>For NEWS2 Pulse Rate Magic Code, the code is fixed to "8867-4" and the system is fixed to "http://loinc.org"<br><br>For NEWS2 pulse rate SNOMED CT Magic Code, the code is fixed to "364075005" and the system is fixed to "http://snomed.info/sct"<br><br>For more refined SNOMED CT codes, the code is from the valueSet defined <a href="#more-refined-snomed-ct-codes-for-pulse-rate"><b>here</b></a> and the system is fixed to "http://snomed.info/sct"<br><br>If a more refined SNOMED CT code is used, then the userSelected element for that code MUST be checked<br><br><b>Note:</b> If a pulse rate is being sent (rather than heart rate), then a more refined code of "78564009", the system "http://snomed.info/sct" and the userSelected element checked should be sent</td>
 </tr>
 <tr>
 <td>subject</td>
@@ -378,7 +380,7 @@ The curation team had to take this into account to create an option of sending a
 </tr>
 <tr>
 <td>effective[x]</td>
-<td>The date and time that the pulse rate was taken, using effectiveDateTime.</td>
+<td>The date and time that the pulse rate was taken, using effectiveDateTime</td>
 </tr>
 <tr>
 <td>issued</td>
@@ -386,7 +388,7 @@ The curation team had to take this into account to create an option of sending a
 </tr>
 <tr>
 <td>performer</td>
-<td>A link to the performer who carried out this observation. This must be a qualified practitioner and associated organisation.</td>
+<td>A link to the performer who carried out this observation. This must be a qualified practitioner and associated organisation</td>
 </tr>
 <tr>
 <td>value[x]</td>
@@ -394,7 +396,7 @@ The curation team had to take this into account to create an option of sending a
 </tr>
 <tr>
 <td>dataAbsentReason</td>
-<td>Not needed for NEWS2 (as only observations with values should be sent for NEWS2).</td>
+<td>Not needed for NEWS2 (as only observations with values should be sent for NEWS2)</td>
 </tr>
 <tr>
 <td>interpretation</td>
@@ -422,7 +424,7 @@ The curation team had to take this into account to create an option of sending a
 </tr>
 <tr>
 <td>related</td>
-<td>A link to any related observations.</td>
+<td>A link to any related observations</td>
 </tr>
 <tr>
 <td>component</td>
@@ -469,9 +471,9 @@ OR «852331000000103|Target pulse rate (observable entity)|)</p>
                 <div class="col-lg-12 footer">
                     <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line">
                     <br>
-                    ©2018 INTEROPen &amp; NHS Digital<br>
-                     Site last generated: Nov 5, 2018 <br>
-                    90b812acf0c0d4ed80b71513f261bb192132b7dd<br>
+                    ©2019 INTEROPen &amp; NHS Digital<br>
+                     Site last generated: Feb 8, 2019 <br>
+                    e32c5859e54b58d395099d60ce6d81ebaca54bf7<br>
                     <br>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">

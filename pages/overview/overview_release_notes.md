@@ -12,4 +12,4 @@ toc: true
 
 ## 1.0.0-alpha ##
 
-Initial release of the NEWS2 specification
+The initial release of the NEWS2 specification.

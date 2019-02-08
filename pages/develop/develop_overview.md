@@ -4,7 +4,7 @@ keywords: design
 tags: [design]
 sidebar: overview_sidebar
 permalink: develop_overview.html
-summary: An overview of the development tools / code examples available to help develop provider and consumder systems.
+summary: An overview of the development tools / code examples available to help develop provider and consumer systems.
 ---
 
 ## System Design ##

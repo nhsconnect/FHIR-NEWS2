@@ -246,26 +246,28 @@
     
     </li>
 <li>
+        <a href="#">Example Scenarios</a>
+        <ul>
+            
+            
+            
+            <li><a href="engage_mr_smith.html">Mr Smith</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    </li>
+<li>
         <a href="#">Develop</a>
         <ul>
             
             
             
             <li><a href="develop_overview.html">Overview</a></li>
-            
-            
-            
-            
-            
-            
-            <li><a href="messaging_over_mesh.html">Messaging Over MESH</a></li>
-            
-            
-            
-            
-            
-            
-            <li><a href="messaging_over_api.html">API Call</a></li>
             
             
             
@@ -342,7 +344,7 @@
 </tr>
 <tr>
 <td>identifier</td>
-<td>A unique identifier assigned to this observation (such as a generated universally unique identifier (uuid))</td>
+<td>A unique identifier assigned to this observation (such as a generated Universally Unique Identifier {UUID})</td>
 </tr>
 <tr>
 <td>basedOn</td>
@@ -370,7 +372,7 @@
 </tr>
 <tr>
 <td>effective[x]</td>
-<td>The date and time that the NEWS2 score was confirmed, using effectiveDateTime.</td>
+<td>The date and time that the NEWS2 score was confirmed, using effectiveDateTime</td>
 </tr>
 <tr>
 <td>issued</td>
@@ -378,7 +380,7 @@
 </tr>
 <tr>
 <td>performer</td>
-<td>A link to the performer who carried out the NEWS2 score. This must be a qualified practitioner and associated organisation.</td>
+<td>A link to the performer who carried out the NEWS2 score. This must be a qualified practitioner and associated organization</td>
 </tr>
 <tr>
 <td>value[x]</td>
@@ -406,8 +408,8 @@
 </tr>
 <tr>
 <td>related</td>
-<td>If NEWS2 sub-scores are being sent in the message, related will point to the contained <a href="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-SubScore-Observation-1" target="_blank"><b>CareConnect-SubScore-Observation-1</b></a> resources (population guidance is <a href="http://127.0.0.1:4005/news2_subscore_guidance.html"><b>here</b></a>). For further information about referencing a contained resource see <a href="https://www.hl7.org/fhir/references.html#contained" target="_blank"><b>here</b></a>. 
-<br><br>If no NEWS2 sub-score are being sent, but supporting observations are being sent, then the related element will point to the supporting observations. Supporting observations are not contained withing the CareConnect-NEWS2-Observation-1 resource. The related links will reference the observations within the NEWS2 bundle. The related observations are<br>
+<td>If NEWS2 sub-scores are being sent in the message, related will point to the contained <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Subscore-Observation-1" target="_blank"><b>CareConnect-Subscore-Observation-1</b></a> resources (population guidance is <a href="http://127.0.0.1:4005/news2_subscore_guidance.html"><b>here</b></a>). For further information about referencing a contained resource see <a href="https://www.hl7.org/fhir/references.html#contained" target="_blank"><b>here</b></a> 
+<br><br>If no NEWS2 sub-scores are being sent, but supporting observations are being sent, then the related element will point to the supporting observations. Supporting observations are not contained within the CareConnect-NEWS2-Observation-1 resource. The related links will reference the observations within the NEWS2 bundle. The related observations are:<br>
 <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-BloodPressure-Observation-1" target="_blank"><b>CareConnect-BloodPressure-Observation-1</b></a> (population guidance <a href="./news2_bloodpressure_guidance.html"><b>here</b></a>) <br>
 <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-BodyTemperature-Observation-1" target="_blank"><b>CareConnect-BodyTemperature-Observation-1</b></a> (population guidance <a href="./news2_bodytemperature_guidance.html"><b>here</b></a>)<br>
 <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ACVPU-Observation-1" target="_blank"><b>CareConnect-ACVPU-Observation-1</b></a> (population guidance <a href="./news2_acvpu_guidance.html"><b>here</b></a>)<br>
@@ -416,7 +418,7 @@
 <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-OxygenSaturation-Observation-1" target="_blank"><b>CareConnect-OxygenSaturation-Observation-1</b></a> (population guidance <a href="./news2_oxygensaturation_guidance.html"><b>here</b></a>)<br>
 <a href="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-RespiratoryRate-Observation-1" target="_blank"><b>CareConnect-RespiratoryRate-Observation-1</b></a> (population guidance <a href="./news2_respiratoryrate_guidance.html"><b>here</b></a>)
 
-<br><br>If no sub-scores and no observations are being sent along with the NEWS2 score, then the related element is omitted.</td>
+<br><br>If no sub-scores and no observations are being sent along with the NEWS2 score, then the related element is omitted</td>
 </tr>
 </table>
 
@@ -458,9 +460,9 @@
                 <div class="col-lg-12 footer">
                     <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line">
                     <br>
-                    ©2018 INTEROPen &amp; NHS Digital<br>
-                     Site last generated: Nov 5, 2018 <br>
-                    90b812acf0c0d4ed80b71513f261bb192132b7dd<br>
+                    ©2019 INTEROPen &amp; NHS Digital<br>
+                     Site last generated: Feb 8, 2019 <br>
+                    e32c5859e54b58d395099d60ce6d81ebaca54bf7<br>
                     <br>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">

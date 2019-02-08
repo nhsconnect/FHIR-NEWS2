@@ -11,7 +11,7 @@ summary: "Example scenario - Mr Smith NEWS2 Summary"
 
 ## Background ##
 
-Mr Smith is 52 year old gentleman who attends the Emergency Department of his local hospital with a fever, cough and pleuritic pain with following vitals:
+Mr Smith is 52-year-old gentleman who attends the Emergency Department of his local hospital with a fever, cough and pleuritic pain with following vitals:
 - Respiratory rate: 21/min
 - Oxygen saturation : 93%
 - On air
@@ -25,7 +25,7 @@ Mr Smith is 52 year old gentleman who attends the Emergency Department of his lo
 - Patient - **Mr William Smith** - [Patient Resource](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1)
 - Emergency Department Consultant - **Dr Paul Rastall** - [Practitioner Resource](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1)
 
-## Named Organisations ##
+## Named Organizations ##
 
 - Hospital - **Anytown Royal Infirmary** - [Organization Resource](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1)
 

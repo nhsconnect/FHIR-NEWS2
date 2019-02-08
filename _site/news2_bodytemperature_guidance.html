@@ -246,26 +246,28 @@
     
     </li>
 <li>
+        <a href="#">Example Scenarios</a>
+        <ul>
+            
+            
+            
+            <li><a href="engage_mr_smith.html">Mr Smith</a></li>
+            
+            
+            
+            
+        </ul>
+        
+        
+    
+    </li>
+<li>
         <a href="#">Develop</a>
         <ul>
             
             
             
             <li><a href="develop_overview.html">Overview</a></li>
-            
-            
-            
-            
-            
-            
-            <li><a href="messaging_over_mesh.html">Messaging Over MESH</a></li>
-            
-            
-            
-            
-            
-            
-            <li><a href="messaging_over_api.html">API Call</a></li>
             
             
             
@@ -342,7 +344,7 @@
 </tr>
 <tr>
 <td>identifier</td>
-<td>A unique identifier assigned to this observation (such as a generated universally unique identifier (uuid))</td>
+<td>A unique identifier assigned to this observation (such as a generated Universally Unique Identifier {UUID})</td>
 </tr>
 <tr>
 <td>basedOn</td>
@@ -354,11 +356,11 @@
 </tr>
 <tr>
 <td>category</td>
-<td>code is fixed to "vital-signs" <br>system is fixed to "http://hl7.org/fhir/observation-category"</td>
+<td>The code is fixed to "vital-signs" <br>The system is fixed to "http://hl7.org/fhir/observation-category"</td>
 </tr>
 <tr>
 <td>code</td>
-<td>code MUST contain the <a href="https://www.hl7.org/fhir/observation-vitalsigns.html#vitals-table" target="_blank"><b>Magic Code</b></a> as per the HL7 vital signs guidance, MUST also have a SNOMED CT equivalent Magic Code and MAY have a more refined SNOMED CT concept code<br><br>For NEWS2 body temperature Magic Code, code is fixed to "8310-5", system is fixed to "http://loinc.org"<br><br>For NEWS2 body temperature SNOMED CT Magic Code, code is fixed to "276885007", system is fixed to "http://snomed.info/sct"<br>For more refined SNOMED CT codes, code is from the valueSet defined <a href="#more-refined-snomed-ct-codes-for-body-temperature"><b>here</b></a>, system is fixed to "http://snomed.info/sct".<br><br>If a more refined SNOMED CT code is used, then the userSelected element for that code MUST be checked. </td>
+<td>The code MUST contain the <a href="https://www.hl7.org/fhir/observation-vitalsigns.html#vitals-table" target="_blank"><b>Magic Code</b></a> as per the HL7 vital signs guidance, MUST also have a SNOMED CT equivalent Magic Code and MAY have a more refined SNOMED CT concept code<br><br>For NEWS2 body temperature Magic Code, the code is fixed to "8310-5" and the system is fixed to "http://loinc.org"<br><br>For NEWS2 body temperature SNOMED CT Magic Code, the code is fixed to "276885007", and the system is fixed to "http://snomed.info/sct"<br><br>For more refined SNOMED CT codes, the code is from the valueSet defined <a href="#more-refined-snomed-ct-codes-for-body-temperature"><b>here</b></a> and the system is fixed to "http://snomed.info/sct"<br><br>If a more refined SNOMED CT code is used, then the userSelected element for that code MUST be checked</td>
 </tr>
 <tr>
 <td>subject</td>
@@ -378,7 +380,7 @@
 </tr>
 <tr>
 <td>performer</td>
-<td>A link to the performer who carried out this observation. This must be a qualified practitioner and associated organisation.</td>
+<td>A link to the performer who carried out this observation. This must be a qualified practitioner and associated organisation</td>
 </tr>
 <tr>
 <td>value[x]</td>
@@ -386,7 +388,7 @@
 </tr>
 <tr>
 <td>dataAbsentReason</td>
-<td>Left uncurated as no use case in NEWS2 (as only observations with values should be sent for NEWS2).</td>
+<td>Left uncurated as no use case in NEWS2 (as only observations with values should be sent for NEWS2)</td>
 </tr>
 <tr>
 <td>interpretation</td>
@@ -414,7 +416,7 @@
 </tr>
 <tr>
 <td>related</td>
-<td>A link to any related observations.</td>
+<td>A link to any related observations</td>
 </tr>
 <tr>
 <td>component</td>
@@ -469,9 +471,9 @@ OR «364537001|Temperature of skin (observable entity)|)</p>
                 <div class="col-lg-12 footer">
                     <img class="pull-left" src="images/explanatoryline.png" alt="NHS Digital Explanatory Line">
                     <br>
-                    ©2018 INTEROPen &amp; NHS Digital<br>
-                     Site last generated: Nov 5, 2018 <br>
-                    90b812acf0c0d4ed80b71513f261bb192132b7dd<br>
+                    ©2019 INTEROPen &amp; NHS Digital<br>
+                     Site last generated: Feb 8, 2019 <br>
+                    e32c5859e54b58d395099d60ce6d81ebaca54bf7<br>
                     <br>
                     <!-- OGL Licence -->
                     <div class="open-government-licence">

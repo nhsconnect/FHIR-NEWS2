@@ -11,7 +11,7 @@ toc: false
 {% include important.html content="This site is under development by NHS Digital, It is advised not to develop against these specifications until a formal announcement has been made." %}
 
 # Alpha #
-This implementation guidance is the Aphla release to support the development of NEWS2.
+This implementation guidance is the Alpha release to support the development of NEWS2.
 
 # Semantic Versioning #
 Given a version number MAJOR.MINOR.PATCH, increment the:
@@ -26,7 +26,7 @@ A pre-release version MAY be denoted by appending a hyphen. Refer to Semantic Ve
 # Pre-release Labels #
 These labels will be taken from the GDS development process stages, and will be one of:
 
-**Experimental**: Early development/POC version of an product for early sight during discovery
+**Experimental**: Early development/POC version of a product for early sight during discovery
 
 **Alpha**: Initial test product, likely to change substantially, or be discontinued as the project develops
 

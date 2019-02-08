@@ -16,26 +16,26 @@ _Note that some elements are "Left uncurated as no use case in NEWS2", and are n
 
 <table>
 <tr><th>CareConnect-RespiratoryRate-Observation-1 element</th><th>Population Guidance</th></tr>
-<tr><td>identifier</td><td>A unique identifier assigned to this observation (such as a generated universally unique identifier (uuid))</td></tr>
+<tr><td>identifier</td><td>A unique identifier assigned to this observation (such as a generated Universally Unique Identifier {UUID})</td></tr>
 <tr><td>basedOn</td><td>Left uncurated as no use case in NEWS2</td></tr>
 <tr><td>status</td><td>Fixed to "final"</td></tr>
-<tr><td>category</td><td>code is fixed to "vital-signs", system is fixed to "http://hl7.org/fhir/observation-category"</td></tr>
-<tr><td>code</td><td>code MUST contain the <a href="https://www.hl7.org/fhir/observation-vitalsigns.html#vitals-table" target="_blank"><b>Magic Code</b></a> as per the HL7 vital signs guidance, MUST also have a SNOMED CT equivalent Magic Code and MAY have a more refined SNOMED CT concept code<br/><br/>For NEWS2 Respiratory Rate Magic Code, code is fixed to "9279-1", system is fixed to "http://loinc.org"<br/><br/>For NEWS2 respiratory rate SNOMED CT Magic Code, code is fixed to "86290005", system is fixed to "http://snomed.info/sct"<br/>For more refined SNOMED CT codes, code is from the valueSet defined <a href="#more-refined-snomed-ct-codes-for-pulse-rate"><b>here</b></a>, system is fixed to "http://snomed.info/sct".<br/><br/>If a more refined SNOMED CT code is used, then the userSelected element for that code MUST be checked.</td></tr>
+<tr><td>category</td><td>The code is fixed to "vital-signs", system is fixed to "http://hl7.org/fhir/observation-category"</td></tr>
+<tr><td>code</td><td>The code MUST contain the <a href="https://www.hl7.org/fhir/observation-vitalsigns.html#vitals-table" target="_blank"><b>Magic Code</b></a> as per the HL7 vital signs guidance, MUST also have a SNOMED CT equivalent Magic Code and MAY have a more refined SNOMED CT concept code<br/><br/>For NEWS2 Respiratory Rate Magic Code, the code is fixed to "9279-1" and the system is fixed to "http://loinc.org"<br/><br/>For NEWS2 respiratory rate SNOMED CT Magic Code, the code is fixed to "86290005" and the system is fixed to "http://snomed.info/sct"<br/><br/>For more refined SNOMED CT codes, the code is from the valueSet defined <a href="#more-refined-snomed-ct-codes-for-respiratory-rate"><b>here</b></a> and the system is fixed to "http://snomed.info/sct"<br/><br/>If a more refined SNOMED CT code is used, then the userSelected element for that code MUST be checked</td></tr>
 <tr><td>subject</td><td>A link to the Patient</td></tr>
 <tr><td>context</td><td>Left uncurated as no use case in NEWS2</td></tr>
-<tr><td>effective[x]</td><td>The date and time that the respiratory rate was taken, using effectiveDateTime.</td></tr>
+<tr><td>effective[x]</td><td>The date and time that the respiratory rate was taken, using effectiveDateTime</td></tr>
 <tr><td>issued</td><td>Left uncurated as no use case in NEWS2</td></tr>
-<tr><td>performer</td><td>A link to the performer who carried out this observation. This must be a qualified practitioner and associated organisation.</td></tr>
+<tr><td>performer</td><td>A link to the performer who carried out this observation. This must be a qualified practitioner and associated organisation</td></tr>
 <tr><td>value[x]</td><td>The actual respiratory rate reading as a valueQuantity. The unit is fixed to "/min" and the system fixed to UCUM "http://unitsofmeasure.org"</td></tr>
-<tr><td>dataAbsentReason</td><td>Left uncurated as no use case in NEWS2 (as only observations with values should be sent for NEWS2).</td></tr>
+<tr><td>dataAbsentReason</td><td>Left uncurated as no use case in NEWS2 (as only observations with values should be sent for NEWS2)</td></tr>
 <tr><td>interpretation</td><td>Left uncurated as no use case in NEWS2</td></tr>
 <tr><td>comment</td><td>Any additional notes or actions that the performer wishes to convey</td></tr>
 <tr><td>bodySite</td><td>Left uncurated as no use case in NEWS2. Body site information may be implied by the pre-coordinated SNOMED CT concept used in Observation.code</td></tr>
 <tr><td>method</td><td>Left uncurated as no use case in NEWS2</td></tr>
 <tr><td>device</td><td>Left uncurated as no use case in NEWS2</td></tr>
 <tr><td>referenceRange</td><td>Left uncurated as no use case in NEWS2</td></tr>
-<tr><td>related</td><td>A link to any related observations.</td></tr>
-<tr><td>component</td><td>None of the component elements are required for NEWS2 Pulse rate Observation</td></tr>
+<tr><td>related</td><td>A link to any related observations</td></tr>
+<tr><td>component</td><td>None of the component elements are required for NEWS2 Pulse Rate Observation</td></tr>
 </table>
 
 

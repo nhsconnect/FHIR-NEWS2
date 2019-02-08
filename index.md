@@ -32,9 +32,9 @@ Other possible use cases where this specification might apply include:
 * GP to ambulance
 
 ## Quick Links ##
-* The Message Design options for NEWS2 implementation are documented <a href="/messageoverview_overview.html">**here**</a>
+* The Message Design options for NEWS2 implementation are documented <a href="./messageoverview_overview.html">**here**</a>
 
-* The FHIR resources used in a NEWS2 exchange are documented <a href="/news2_and_subscore_profiles.html">**here**</a>
+* The FHIR resources used in a NEWS2 exchange are documented <a href="./news2_and_subscore_profiles.html">**here**</a>
 
 ## How NEWS2 Works ##
 _Reproduced from: Royal College of Physicians. National Early Warning Score (NEWS) 2: Standardising the assessment of acute-illness severity in the NHS. Updated report of a working party. London: RCP, 2017._
